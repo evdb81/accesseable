@@ -7,9 +7,12 @@
 //
 
 import Foundation
-import CoreData   //persistentContainer & saveContext() zijn gekopieerd uit de AppDelegate
+import CoreData
 
-public class DAO{
+    //persiste
+    // PER
+    
+
     
     
     static let sharedDAO:DAO = DAO.init()
@@ -47,7 +50,13 @@ public class DAO{
         return []
     }
     
-    
+
+
+
+
+
+
+
     // MARK: - Core Data Saving support
     func saveContext () {
         let context = persistentContainer.viewContext
