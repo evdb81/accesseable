@@ -49,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="3514" y="-143"/>
         </scene>
-        <!--Startpagina-->
+        <!--STARTPAGINA-->
         <scene sceneID="fw4-7p-vYw">
             <objects>
                 <viewController id="taf-uY-cpD" customClass="ViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
@@ -200,16 +200,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Startpagina" id="x3x-Tv-DRE"/>
+                    <navigationItem key="navigationItem" title="STARTPAGINA" id="x3x-Tv-DRE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVV-kR-Pjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="220" y="-725.48725637181417"/>
         </scene>
-        <!--Favorieten-->
+        <!--FAVORIETEN-->
         <scene sceneID="TRB-q8-MrX">
             <objects>
-                <viewController title="Favorieten" id="uJW-Bf-ibh" sceneMemberID="viewController">
+                <viewController title="FAVORIETEN" id="uJW-Bf-ibh" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MeC-TV-UGw"/>
                         <viewControllerLayoutGuide type="bottom" id="jrj-Ss-per"/>
@@ -225,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="1990" y="-609"/>
         </scene>
-        <!--Instellingen-->
+        <!--INSTELLINGEN-->
         <scene sceneID="EJe-tZ-p2Y">
             <objects>
-                <viewController title="Instellingen" id="Dgm-7u-GvX" sceneMemberID="viewController">
+                <viewController title="INSTELLINGEN" id="Dgm-7u-GvX" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OOB-Gg-fT3"/>
                         <viewControllerLayoutGuide type="bottom" id="5yY-nN-jKr"/>
@@ -243,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="-121" y="225"/>
         </scene>
-        <!--Profiel-->
+        <!--PROFIEL-->
         <scene sceneID="WKV-Fu-kaA">
             <objects>
-                <viewController title="Profiel" id="APx-0h-tHZ" sceneMemberID="viewController">
+                <viewController title="PROFIEL" id="APx-0h-tHZ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZfA-Pw-YJb"/>
                         <viewControllerLayoutGuide type="bottom" id="Dyo-Xx-UCw"/>
@@ -261,10 +261,10 @@
             </objects>
             <point key="canvasLocation" x="1033" y="468"/>
         </scene>
-        <!--Recent-->
+        <!--RECENT-->
         <scene sceneID="ch5-IT-afD">
             <objects>
-                <viewController title="Recent" id="iTw-c7-3gH" sceneMemberID="viewController">
+                <viewController title="RECENT" id="iTw-c7-3gH" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lxa-wm-2fA"/>
                         <viewControllerLayoutGuide type="bottom" id="LhK-Ik-Y0Q"/>
@@ -279,10 +279,10 @@
             </objects>
             <point key="canvasLocation" x="1990" y="108"/>
         </scene>
-        <!--Info-->
+        <!--INFO-->
         <scene sceneID="80n-Ux-ecN">
             <objects>
-                <viewController title="Info" id="D6u-iF-rYZ" customClass="InfoViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INFO" id="D6u-iF-rYZ" customClass="InfoViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KhL-7Q-q6e"/>
                         <viewControllerLayoutGuide type="bottom" id="6Sv-I4-VeJ"/>
@@ -315,10 +315,10 @@
             </objects>
             <point key="canvasLocation" x="487" y="1173"/>
         </scene>
-        <!--In De Buurt-->
+        <!--IN DE BUURT-->
         <scene sceneID="euo-T6-3D4">
             <objects>
-                <viewController title="In De Buurt" id="pSV-qe-6ui" customClass="BuurtViewController" customModule="TestAccesseableREST" sceneMemberID="viewController">
+                <viewController title="IN DE BUURT" id="pSV-qe-6ui" customClass="BuurtViewController" customModule="TestAccesseableREST" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="182-dj-Sfk"/>
                         <viewControllerLayoutGuide type="bottom" id="AIb-OG-e90"/>
@@ -367,10 +367,10 @@
             </objects>
             <point key="canvasLocation" x="1125.5999999999999" y="-906.29685157421295"/>
         </scene>
-        <!--Buurt Categoriee n View Controller-->
+        <!--KAART-->
         <scene sceneID="flC-ib-3Rn">
             <objects>
-                <viewController id="wst-ro-jmq" customClass="BuurtCategoriee_nViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="KAART" id="wst-ro-jmq" customClass="BuurtCategorieenViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kwk-uC-fqu"/>
                         <viewControllerLayoutGuide type="bottom" id="uvD-Zv-AVG"/>
@@ -380,19 +380,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbD-BU-y0k">
-                                <rect key="frame" x="12" y="102" width="51" height="31"/>
+                                <rect key="frame" x="12" y="102" width="51" height="35"/>
                                 <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-AU-2Il">
-                                <rect key="frame" x="12" y="154" width="51" height="31"/>
+                                <rect key="frame" x="12" y="158" width="51" height="36.5"/>
                                 <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zww-BV-lmP">
-                                <rect key="frame" x="12" y="206" width="51" height="31"/>
+                                <rect key="frame" x="12" y="215.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wK4-Rw-DlL">
-                                <rect key="frame" x="12" y="258" width="51" height="31"/>
+                                <rect key="frame" x="12" y="267.5" width="51" height="3.5"/>
                                 <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0V8-Mf-Jmm">
@@ -408,50 +408,78 @@
                                 <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurants en Cafés" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-RY-AWi">
-                                <rect key="frame" x="83" y="102" width="258" height="26"/>
+                                <rect key="frame" x="83" y="102" width="266" height="26"/>
                                 <color key="backgroundColor" red="0.20568543174615384" green="0.20568543174615384" blue="0.20568543174615384" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="bIE-f6-iP4"/>
+                                    <constraint firstAttribute="height" constant="26" id="dU9-Go-i4d"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Openbare Toiletten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-2U-2Rm">
-                                <rect key="frame" x="83" y="154" width="258" height="27"/>
+                                <rect key="frame" x="83" y="154" width="266" height="27"/>
                                 <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Ojj-kG-NCY"/>
+                                    <constraint firstAttribute="width" constant="266" id="Yba-X2-yOB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="tl9-Ei-wxL">
-                                <rect key="frame" x="83" y="209" width="258" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musea etc." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="tl9-Ei-wxL">
+                                <rect key="frame" x="83" y="209" width="266" height="24"/>
                                 <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="G9L-CP-6we"/>
+                                    <constraint firstAttribute="width" constant="266" id="Rsn-Od-CL1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Infopunten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="yaf-DT-Vc5">
-                                <rect key="frame" x="83" y="265" width="258" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Infopunten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="yaf-DT-Vc5">
+                                <rect key="frame" x="84" y="267" width="266" height="24"/>
                                 <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="bsF-nK-VUE"/>
+                                    <constraint firstAttribute="width" constant="266" id="vMT-9Q-1eL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotels en Slaapplaatsen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-J1-O6b">
-                                <rect key="frame" x="84" y="323" width="257" height="24"/>
+                                <rect key="frame" x="83" y="323" width="266" height="24"/>
                                 <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="2ZM-f0-VHH"/>
+                                    <constraint firstAttribute="width" constant="266" id="XZk-6c-yJm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hellingen (van dijk naar strand)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-uh-jT9">
-                                <rect key="frame" x="84" y="433" width="251" height="24"/>
+                                <rect key="frame" x="84" y="433" width="265" height="24"/>
                                 <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="3fZ-Qi-MYk"/>
+                                    <constraint firstAttribute="height" constant="24" id="3yb-gx-Z3w"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voorbehouden Parking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="E7a-UU-gDb">
-                                <rect key="frame" x="83" y="375" width="258" height="24"/>
+                                <rect key="frame" x="83" y="375" width="266" height="24"/>
                                 <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="CxD-Mz-MVS"/>
+                                    <constraint firstAttribute="width" constant="266" id="rTe-f5-Djz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -465,7 +493,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPT-nf-uMv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPT-nf-uMv">
                                 <rect key="frame" x="12" y="482" width="91" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -475,6 +503,11 @@
                                 <state key="normal" title="ZOEKEN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -482,31 +515,29 @@
                             <constraint firstItem="wK4-Rw-DlL" firstAttribute="top" secondItem="zww-BV-lmP" secondAttribute="bottom" constant="21" id="1GR-nM-4fc"/>
                             <constraint firstItem="ZL0-Bz-6Kj" firstAttribute="top" secondItem="0V8-Mf-Jmm" secondAttribute="bottom" constant="21" id="27T-XJ-nwL"/>
                             <constraint firstItem="DtT-Kl-Yab" firstAttribute="leading" secondItem="pGj-Uz-e65" secondAttribute="leadingMargin" constant="-4" id="4Cc-sb-ysd"/>
-                            <constraint firstItem="wK4-Rw-DlL" firstAttribute="bottom" secondItem="yaf-DT-Vc5" secondAttribute="bottom" id="5zH-mV-AIx"/>
+                            <constraint firstItem="wK4-Rw-DlL" firstAttribute="bottom" secondItem="yaf-DT-Vc5" secondAttribute="bottom" constant="-18" id="5zH-mV-AIx"/>
                             <constraint firstItem="qRd-2U-2Rm" firstAttribute="trailing" secondItem="tl9-Ei-wxL" secondAttribute="trailing" id="72H-qL-fgK"/>
                             <constraint firstItem="wtN-J1-O6b" firstAttribute="top" secondItem="yaf-DT-Vc5" secondAttribute="bottom" constant="34" id="7no-n6-t2w"/>
                             <constraint firstItem="E7a-UU-gDb" firstAttribute="top" secondItem="wtN-J1-O6b" secondAttribute="bottom" constant="28" id="BO4-rf-Frs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PIt-RY-AWi" secondAttribute="trailing" constant="18" id="BVj-Pv-I1F"/>
                             <constraint firstItem="tl9-Ei-wxL" firstAttribute="top" secondItem="qRd-2U-2Rm" secondAttribute="bottom" constant="28" id="Cda-BY-L3W"/>
                             <constraint firstItem="PIt-RY-AWi" firstAttribute="top" secondItem="kwk-uC-fqu" secondAttribute="bottom" constant="38" id="HzR-7j-REj"/>
-                            <constraint firstItem="uvD-Zv-AVG" firstAttribute="top" secondItem="xPT-nf-uMv" secondAttribute="bottom" constant="144" id="Iey-yt-hlM"/>
+                            <constraint firstItem="uvD-Zv-AVG" firstAttribute="top" secondItem="xPT-nf-uMv" secondAttribute="bottom" constant="155" id="Iey-yt-hlM"/>
                             <constraint firstItem="xs4-AU-2Il" firstAttribute="leading" secondItem="zww-BV-lmP" secondAttribute="leading" id="Jct-WJ-xlX"/>
-                            <constraint firstItem="wtN-J1-O6b" firstAttribute="leading" secondItem="L3s-uh-jT9" secondAttribute="leading" id="Kdv-JX-I7b"/>
+                            <constraint firstItem="wtN-J1-O6b" firstAttribute="leading" secondItem="L3s-uh-jT9" secondAttribute="leading" constant="-1" id="Kdv-JX-I7b"/>
                             <constraint firstItem="qRd-2U-2Rm" firstAttribute="leading" secondItem="tl9-Ei-wxL" secondAttribute="leading" id="Oz3-od-2K8"/>
                             <constraint firstItem="zww-BV-lmP" firstAttribute="top" secondItem="xs4-AU-2Il" secondAttribute="bottom" constant="21" id="PSr-PQ-btg"/>
                             <constraint firstItem="xs4-AU-2Il" firstAttribute="top" secondItem="WbD-BU-y0k" secondAttribute="bottom" constant="21" id="PZW-26-fUt"/>
-                            <constraint firstItem="xPT-nf-uMv" firstAttribute="leading" secondItem="pGj-Uz-e65" secondAttribute="leadingMargin" constant="-10" id="Ppj-Af-9At"/>
+                            <constraint firstItem="xPT-nf-uMv" firstAttribute="leading" secondItem="pGj-Uz-e65" secondAttribute="leadingMargin" constant="-4" id="Ppj-Af-9At"/>
                             <constraint firstItem="WbD-BU-y0k" firstAttribute="top" secondItem="DtT-Kl-Yab" secondAttribute="bottom" constant="8" symbolic="YES" id="QIo-yJ-h2C"/>
                             <constraint firstItem="wK4-Rw-DlL" firstAttribute="leading" secondItem="0V8-Mf-Jmm" secondAttribute="leading" id="Qsv-6V-V2o"/>
                             <constraint firstItem="0V8-Mf-Jmm" firstAttribute="leading" secondItem="ZL0-Bz-6Kj" secondAttribute="leading" id="SJ8-SV-ymG"/>
-                            <constraint firstItem="zww-BV-lmP" firstAttribute="centerY" secondItem="tl9-Ei-wxL" secondAttribute="centerY" id="SuH-jr-euH"/>
+                            <constraint firstItem="zww-BV-lmP" firstAttribute="centerY" secondItem="tl9-Ei-wxL" secondAttribute="centerY" constant="10" id="SuH-jr-euH"/>
                             <constraint firstItem="tl9-Ei-wxL" firstAttribute="trailing" secondItem="yaf-DT-Vc5" secondAttribute="trailing" id="TkP-jO-C1k"/>
-                            <constraint firstItem="xs4-AU-2Il" firstAttribute="top" secondItem="qRd-2U-2Rm" secondAttribute="top" id="UwX-UR-J0M"/>
+                            <constraint firstItem="xs4-AU-2Il" firstAttribute="top" secondItem="qRd-2U-2Rm" secondAttribute="top" constant="4" id="UwX-UR-J0M"/>
                             <constraint firstItem="PIt-RY-AWi" firstAttribute="leading" secondItem="qRd-2U-2Rm" secondAttribute="leading" id="VJY-08-AUG"/>
                             <constraint firstItem="tl9-Ei-wxL" firstAttribute="leading" secondItem="yaf-DT-Vc5" secondAttribute="leading" id="VSS-Lj-I1e"/>
                             <constraint firstItem="WbD-BU-y0k" firstAttribute="top" secondItem="PIt-RY-AWi" secondAttribute="top" id="WjK-MM-AHy"/>
                             <constraint firstItem="PIt-RY-AWi" firstAttribute="leading" secondItem="WbD-BU-y0k" secondAttribute="trailing" constant="22" id="Wuy-mP-UBb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="L3s-uh-jT9" secondAttribute="trailing" constant="24" id="Xry-Ye-9he"/>
                             <constraint firstItem="L3s-uh-jT9" firstAttribute="top" secondItem="E7a-UU-gDb" secondAttribute="bottom" constant="34" id="Y9D-fm-6ql"/>
                             <constraint firstItem="zww-BV-lmP" firstAttribute="leading" secondItem="wK4-Rw-DlL" secondAttribute="leading" id="YgZ-tU-Pe9"/>
                             <constraint firstItem="ECd-oQ-9Zh" firstAttribute="top" secondItem="ZL0-Bz-6Kj" secondAttribute="bottom" constant="27" id="aNg-iI-rbF"/>
@@ -514,26 +545,34 @@
                             <constraint firstItem="DtT-Kl-Yab" firstAttribute="leading" secondItem="WbD-BU-y0k" secondAttribute="leading" id="gON-qh-x8h"/>
                             <constraint firstItem="wtN-J1-O6b" firstAttribute="trailing" secondItem="E7a-UU-gDb" secondAttribute="trailing" id="h2v-mD-j9l"/>
                             <constraint firstItem="qRd-2U-2Rm" firstAttribute="top" secondItem="PIt-RY-AWi" secondAttribute="bottom" constant="26" id="jel-Ye-dN2"/>
-                            <constraint firstItem="xPT-nf-uMv" firstAttribute="top" secondItem="ECd-oQ-9Zh" secondAttribute="bottom" constant="34" id="lKQ-v0-JLq"/>
+                            <constraint firstItem="xPT-nf-uMv" firstAttribute="top" secondItem="ECd-oQ-9Zh" secondAttribute="bottom" constant="23" id="lKQ-v0-JLq"/>
                             <constraint firstItem="yaf-DT-Vc5" firstAttribute="leading" secondItem="E7a-UU-gDb" secondAttribute="leading" id="n9U-kz-gSj"/>
                             <constraint firstItem="0V8-Mf-Jmm" firstAttribute="centerY" secondItem="pGj-Uz-e65" secondAttribute="centerY" id="p8d-fh-MmU"/>
-                            <constraint firstItem="wtN-J1-O6b" firstAttribute="centerX" secondItem="E7a-UU-gDb" secondAttribute="centerX" id="pHR-ZL-azh"/>
                             <constraint firstItem="PIt-RY-AWi" firstAttribute="trailing" secondItem="qRd-2U-2Rm" secondAttribute="trailing" id="pc3-iT-9qy"/>
                             <constraint firstItem="DtT-Kl-Yab" firstAttribute="top" secondItem="kwk-uC-fqu" secondAttribute="bottom" constant="9" id="qmp-Vp-iYV"/>
                             <constraint firstItem="yaf-DT-Vc5" firstAttribute="trailing" secondItem="wtN-J1-O6b" secondAttribute="trailing" id="xIm-y4-gA4"/>
-                            <constraint firstItem="xPT-nf-uMv" firstAttribute="top" secondItem="L3s-uh-jT9" secondAttribute="bottom" constant="36" id="yrW-pT-r4o"/>
+                            <constraint firstItem="xPT-nf-uMv" firstAttribute="top" secondItem="L3s-uh-jT9" secondAttribute="bottom" constant="25" id="yrW-pT-r4o"/>
                             <constraint firstItem="ZL0-Bz-6Kj" firstAttribute="leading" secondItem="ECd-oQ-9Zh" secondAttribute="leading" id="zn1-wm-w5M"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="swHellingen" destination="L3s-uh-jT9" id="DzX-dh-Mva"/>
+                        <outlet property="swHotels" destination="0V8-Mf-Jmm" id="0xe-j7-lsb"/>
+                        <outlet property="swInfopunten" destination="wK4-Rw-DlL" id="ILz-BF-vgk"/>
+                        <outlet property="swMusea" destination="zww-BV-lmP" id="ATT-1L-mLF"/>
+                        <outlet property="swParking" destination="ZL0-Bz-6Kj" id="cvB-kF-MBs"/>
+                        <outlet property="swReCa" destination="WbD-BU-y0k" id="KYc-lO-pwi"/>
+                        <outlet property="swToilet" destination="xs4-AU-2Il" id="iEV-Os-MeA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iI2-Bn-333" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1989.5999999999999" y="-1248.1259370314845"/>
         </scene>
-        <!--Zoeken-->
+        <!--ZOEKEN-->
         <scene sceneID="nH0-jd-4ZN">
             <objects>
-                <viewController title="Zoeken" id="VcT-IA-WTi" sceneMemberID="viewController">
+                <viewController title="ZOEKEN" id="VcT-IA-WTi" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TVI-qn-Hwe"/>
                         <viewControllerLayoutGuide type="bottom" id="pSY-FV-ijk"/>
