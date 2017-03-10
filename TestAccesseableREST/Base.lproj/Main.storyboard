@@ -52,7 +52,6 @@
         <!--Startpagina-->
         <scene sceneID="fw4-7p-vYw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cVV-kR-Pjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="taf-uY-cpD" customClass="ViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x3b-wU-yhb"/>
@@ -85,15 +84,15 @@
                                     <segue destination="VcT-IA-WTi" kind="show" identifier="segue_zoeken" id="u0P-eJ-2Dg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorieten (n)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTr-Cz-yOf">
-                                <rect key="frame" x="45" y="286" width="135" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mijn Locaties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTr-Cz-yOf">
+                                <rect key="frame" x="45" y="286" width="135" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="742" fixedFrame="YES" text="In de buurt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeg-k9-9iX">
-                                <rect key="frame" x="223" y="110" width="99" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="742" fixedFrame="YES" text="In De Buurt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeg-k9-9iX">
+                                <rect key="frame" x="223" y="110" width="100" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,6 +123,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="APx-0h-tHZ" kind="show" id="8Ro-oN-7cx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkc-CL-Lef">
                                 <rect key="frame" x="45" y="315" width="100" height="100"/>
@@ -137,6 +139,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ur7-3z-2rA" kind="show" id="52d-qY-5u3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyu-LG-fPp">
                                 <rect key="frame" x="229" y="516" width="93" height="93"/>
@@ -149,6 +154,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="D6u-iF-rYZ" kind="show" id="jGg-Zs-Lsn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Wie Zijn Wij" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug9-Gx-not">
                                 <rect key="frame" x="219" y="494" width="123" height="21"/>
@@ -182,12 +190,16 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Dgm-7u-GvX" kind="show" id="IES-Jr-scQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Startpagina" id="x3x-Tv-DRE"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVV-kR-Pjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="220" y="-725.48725637181417"/>
         </scene>
@@ -209,6 +221,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ag5-LW-Cre" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1990" y="-609"/>
+        </scene>
+        <!--Instellingen-->
+        <scene sceneID="EJe-tZ-p2Y">
+            <objects>
+                <viewController title="Instellingen" id="Dgm-7u-GvX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OOB-Gg-fT3"/>
+                        <viewControllerLayoutGuide type="bottom" id="5yY-nN-jKr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Instelling" id="bEZ-JF-NnY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mr1-SH-K4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="225"/>
         </scene>
         <!--Profiel-->
         <scene sceneID="WKV-Fu-kaA">
@@ -259,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" indicatorStyle="black" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="46h-0u-QPa">
-                                <rect key="frame" x="16" y="37" width="343" height="593"/>
+                                <rect key="frame" x="16" y="81" width="343" height="549"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -280,12 +310,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhe-1V-Jj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032.8" y="2024.4377811094455"/>
+            <point key="canvasLocation" x="487" y="1173"/>
         </scene>
         <!--In De Buurt-->
         <scene sceneID="euo-T6-3D4">
             <objects>
-                <viewController title="In De Buurt" id="pSV-qe-6ui" sceneMemberID="viewController">
+                <viewController title="In De Buurt" id="pSV-qe-6ui" customClass="BuurtViewController" customModule="TestAccesseableREST" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="182-dj-Sfk"/>
                         <viewControllerLayoutGuide type="bottom" id="AIb-OG-e90"/>
@@ -293,12 +323,37 @@
                     <view key="view" contentMode="scaleToFill" id="AOP-2O-cwi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWz-ns-uSE">
+                                <rect key="frame" x="275" y="67" width="91" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Categorieën"/>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IJA-Z5-3Og">
+                                <rect key="frame" x="0.0" y="42" width="375" height="605"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xVR-Sy-qan">
+                                <rect key="frame" x="8" y="71" width="251" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Standaard"/>
+                                    <segment title="Satelliet"/>
+                                    <segment title="Hybride"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="0.94149742069999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IJA-Z5-3Og" firstAttribute="leading" secondItem="AOP-2O-cwi" secondAttribute="leading" id="Mbx-5f-sBi"/>
+                            <constraint firstItem="IJA-Z5-3Og" firstAttribute="top" secondItem="AOP-2O-cwi" secondAttribute="topMargin" constant="42" id="N0B-JY-UMc"/>
+                            <constraint firstItem="AIb-OG-e90" firstAttribute="top" secondItem="IJA-Z5-3Og" secondAttribute="bottom" constant="20" id="eT2-wO-jgg"/>
+                            <constraint firstAttribute="trailing" secondItem="IJA-Z5-3Og" secondAttribute="trailing" id="uUu-0R-Ma6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIF-4Q-z5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="-896"/>
+            <point key="canvasLocation" x="1126" y="-906"/>
         </scene>
         <!--Zoeken-->
         <scene sceneID="nH0-jd-4ZN">
@@ -322,7 +377,6 @@
         <!--Navigation Controller-->
         <scene sceneID="a06-uj-sdH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FgE-fL-vZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cwv-uD-kpC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ode-sn-4Im">
@@ -334,6 +388,7 @@
                         <segue destination="taf-uY-cpD" kind="relationship" relationship="rootViewController" id="yAS-cD-OLq"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FgE-fL-vZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-775" y="-741"/>
         </scene>
