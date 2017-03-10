@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TramViewController: UIViewController {
 
+    @IBOutlet weak var tvTramhaltes: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tvTramhaltes.text = "\(DAO.sharedDAO.getAllTramHaltes())"
+        
+        DAO.sharedDAO.saveContext()
+        
     }
 
     override func didReceiveMemoryWarning() {
