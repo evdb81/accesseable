@@ -22,7 +22,7 @@ public class JSONParser{
             let jsonData = try Data(contentsOf: url!)
             let jsonArray:NSArray = try JSONSerialization.jsonObject(with: jsonData) as! NSArray
             
-            //alle items aflopen in de jsonArray (om gegevens uit te halen)
+            //alle items aflopen in de jsonArray (om gegevens uit database te halen)
             for item in jsonArray{
                 
                 let jsonObject:NSDictionary = item as! NSDictionary

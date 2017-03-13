@@ -15,18 +15,9 @@ class TramViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tvTramhaltes.text = "\(DAO.sharedDAO.getAllTramHaltes())"
-        
-        DAO.sharedDAO.saveContext()
-        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+   
 }
 

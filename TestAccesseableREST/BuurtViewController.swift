@@ -18,7 +18,29 @@ class BuurtViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createRegion()
+        createAnnotations()
+        checkLocationAuthorization()
     }
+    
+    
+    //
+    func viewDidAppear(){
+        checkLocationAuthorization()
+    }
+    
+    //
+    func createAnnotations(){
+       // let coToiletten
+        // let coReCa
+        let items = DAO.sharedDAO.getAllTramHaltes()
+        
+        for item in items{
+            let annotation:MyAnnotation = MyAnnotation.init(halte: item)
+            mapview.addAnnotation(annotation)
+        }
+    }
+    
+    
     
     //regio om op te focussen
     func createRegion()
