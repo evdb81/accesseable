@@ -159,9 +159,7 @@ public class JSONParser{
                 let idStr = jsonObject.value(forKey: "stop_id") as! String
                 volgendeInfokantoor.stop_id = Int32.init(idStr)!
                 
-                volgendeInfokantoor.stop_name = jsonObject.value(forKey: "stop_name") as? String
-                
-                //rest keys nog niet aangepast
+                               //rest keys nog niet aangepast
             }
         }catch{
             print("waerkt ni jung")
