@@ -61,16 +61,11 @@ public class JSONParser{
                 //entiteit aanmaken, context = verwijzing naar waar opgeslagen
                 let volgendeSanitair = Sanitair(context: context)
                 
-                //strings omzetten waar nodig
-                let idStr = jsonObject.value(forKey: "id_westkans") as! String
-                volgendeSanitair.id_westkans = Int32.init(idStr)!
-                
-                volgendeSanitair.naam = jsonObject.value(forKey: "naam") as? String
-                
+               
                 //rest keys nog niet aangepast
             }
         }catch{
-            print("waerkt ni jung")
+            print("foutieve informatie sanitair")
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
@@ -100,7 +95,7 @@ public class JSONParser{
                 //rest keys nog niet aangepast
             }
         }catch{
-            print("waerkt ni jung")
+            print("foutieve informatie parkeerplaatsen")
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
@@ -120,7 +115,7 @@ public class JSONParser{
                 
                 let jsonObject:NSDictionary = item as! NSDictionary
                 //entiteit aanmaken, context = verwijzing naar waar opgeslagen
-                let volgendeReca = Reca(context: context)
+                let volgendeReca = Restaurant(context: context)
                 
                 //strings omzetten waar nodig
                 let idStr = jsonObject.value(forKey: "id_westkans") as! String
@@ -131,7 +126,7 @@ public class JSONParser{
                 //rest keys nog niet aangepast
             }
         }catch{
-            print("waerkt ni jung")
+            print("foutieve informatie Re&Ca")
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
@@ -154,15 +149,10 @@ public class JSONParser{
                 let jsonObject:NSDictionary = item as! NSDictionary
                 //entiteit aanmaken, context = verwijzing naar waar opgeslagen
                 let volgendeInfokantoor = Infokantoor(context: context)
-                
-                //strings omzetten waar nodig
-                let idStr = jsonObject.value(forKey: "stop_id") as! String
-                volgendeInfokantoor.stop_id = Int32.init(idStr)!
-                
-                               //rest keys nog niet aangepast
+
             }
         }catch{
-            print("waerkt ni jung")
+            print("foutieve informatie infokantoren")
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }

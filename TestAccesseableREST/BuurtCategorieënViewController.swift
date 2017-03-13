@@ -22,14 +22,12 @@ class BuurtCategorieenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
     }
     
     
     @IBAction func zoekOpCategorie(_ sender: UIButton) {
 
-        
+        //als een switch aanstaat//toon deze dan op de map 'in de buurt'
         if (swReCa.isOn)
             {
                 
