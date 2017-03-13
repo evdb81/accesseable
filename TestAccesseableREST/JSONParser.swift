@@ -44,11 +44,11 @@ public class JSONParser{
     }
     
     
-    func parseInfokantoor( context: NSManagedObjectContext)
+    func parseSanitair( context: NSManagedObjectContext)
     {
         //waar staan de gegevens
-        let url = URL(string:"https://web10.weopendata.com/measurements/info")
-        //exceptions mogelijk bv. geen internet
+        let url = URL(string:"https://web10.weopendata.com/measurements/sanitair")
+        //exceptions mogelijk bv. geen interent
         do{
             //data binnentrekken van url en in array opslaan
             let jsonData = try Data(contentsOf: url!)
@@ -59,13 +59,13 @@ public class JSONParser{
                 
                 let jsonObject:NSDictionary = item as! NSDictionary
                 //entiteit aanmaken, context = verwijzing naar waar opgeslagen
-                let volgendeInfokantoor = Infokantoor(context: context)
+                let volgendeSanitair = Sanitair(context: context)
                 
                 //strings omzetten waar nodig
-                let idStr = jsonObject.value(forKey: "stop_id") as! String
-                volgendeInfokantoor.stop_id = Int32.init(idStr)!
+                let idStr = jsonObject.value(forKey: "id_westkans") as! String
+                volgendeSanitair.id_westkans = Int32.init(idStr)!
                 
-                volgendeInfokantoor.stop_name = jsonObject.value(forKey: "stop_name") as? String
+                volgendeSanitair.naam = jsonObject.value(forKey: "naam") as? String
                 
                 //rest keys nog niet aangepast
             }
@@ -74,8 +74,9 @@ public class JSONParser{
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
+    
 
-    func parseVPP (context: NSManagedObjectContext)
+      func parseVPP (context: NSManagedObjectContext)
     {
         //waar staan de gegevens
         let url = URL(string:"https://web10.weopendata.com/measurements/vpp")
@@ -103,12 +104,45 @@ public class JSONParser{
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
-
-    func parseSanitair( context: NSManagedObjectContext)
+    
+    func parseReca( context: NSManagedObjectContext)
     {
         //waar staan de gegevens
-        let url = URL(string:"https://web10.weopendata.com/measurements/sanitair")
+        let url = URL(string:"https://web10.weopendata.com/measurements/reca")
         //exceptions mogelijk bv. geen interent
+        do{
+            //data binnentrekken van url en in array opslaan
+            let jsonData = try Data(contentsOf: url!)
+            let jsonArray:NSArray = try JSONSerialization.jsonObject(with: jsonData) as! NSArray
+            
+            //alle items aflopen in de jsonArray (om gegevens uit database te halen)
+            for item in jsonArray{
+                
+                let jsonObject:NSDictionary = item as! NSDictionary
+                //entiteit aanmaken, context = verwijzing naar waar opgeslagen
+                let volgendeReca = Reca(context: context)
+                
+                //strings omzetten waar nodig
+                let idStr = jsonObject.value(forKey: "id_westkans") as! String
+                volgendeReca.id_westkans = Int32.init(idStr)!
+                
+                volgendeReca.naam = jsonObject.value(forKey: "naam") as? String
+                
+                //rest keys nog niet aangepast
+            }
+        }catch{
+            print("waerkt ni jung")
+        }
+        //geen return nodig omdat je gegevens direct opslaat in je databank
+    }
+    
+
+
+    func parseInfokantoor( context: NSManagedObjectContext)
+    {
+        //waar staan de gegevens
+        let url = URL(string:"https://web10.weopendata.com/measurements/info")
+        //exceptions mogelijk bv. geen internet
         do{
             //data binnentrekken van url en in array opslaan
             let jsonData = try Data(contentsOf: url!)
@@ -119,13 +153,13 @@ public class JSONParser{
                 
                 let jsonObject:NSDictionary = item as! NSDictionary
                 //entiteit aanmaken, context = verwijzing naar waar opgeslagen
-                let volgendeSanitair = Sanitair(context: context)
+                let volgendeInfokantoor = Infokantoor(context: context)
                 
                 //strings omzetten waar nodig
-                let idStr = jsonObject.value(forKey: "id_westkans") as! String
-                volgendeSanitair.id_westkans = Int32.init(idStr)!
+                let idStr = jsonObject.value(forKey: "stop_id") as! String
+                volgendeInfokantoor.stop_id = Int32.init(idStr)!
                 
-                volgendeSanitair.naam = jsonObject.value(forKey: "naam") as? String
+                volgendeInfokantoor.stop_name = jsonObject.value(forKey: "stop_name") as? String
                 
                 //rest keys nog niet aangepast
             }
