@@ -8,43 +8,44 @@
 
 import Foundation
 import MapKit
+import CoreData
 
 public class MyAnnotation:NSObject, MKAnnotation
 {
     public var coordinate: CLLocationCoordinate2D
     
     
-    init(reca:Infokantoor)
+    init(info:Infokantoor)
     {
-        self.coordinate = CLLocationCoordinate2DMake(Infokantoor.lat, Infokantoor.lon)
+        self.coordinate = CLLocationCoordinate2DMake(info.lat, info.lon)
     }
     
-    init(reca:Logement)
+    init(log:Logement)
     {
-        self.coordinate = CLLocationCoordinate2DMake()
+        self.coordinate = CLLocationCoordinate2DMake(log.lat, log.lon)
     }
     
-    init(reca:POI)
+    init(poi:POI)
     {
-        self.coordinate = CLLocationCoordinate2DMake(POI.lat, POI.lon)
+        self.coordinate = CLLocationCoordinate2DMake(poi.lat, poi.lon)
     }
     
-    init(reca:ReCA)
+    init(reca:Restaurant)
     {
-        self.coordinate = CLLocationCoordinate2DMake()
+        self.coordinate = CLLocationCoordinate2DMake(reca.lat, reca.lon)
     }
  
     
-    init(reca:Sanitair)
+    init(san:Sanitair)
     {
-        self.coordinate = CLLocationCoordinate2DMake(sanitair.lat, sanitair.lon)
+        self.coordinate = CLLocationCoordinate2DMake(san.lat, san.lon)
     }
     
     init(halte:Tramhalte) {
-        self.coordinate = CLLocationCoordinate2DMake(Tramhalte.stop_lat, Tramhalte.stop_lon)
+        self.coordinate = CLLocationCoordinate2DMake(halte.stop_lat, halte.stop_lon)
     }
 
-    init(reca:VPP)
+    init(vpp:VPP)
     {
         self.coordinate = CLLocationCoordinate2DMake(vpp.lat, vpp.lon)
     }
