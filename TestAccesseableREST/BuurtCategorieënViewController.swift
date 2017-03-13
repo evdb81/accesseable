@@ -25,17 +25,17 @@ class BuurtCategorieenViewController: UIViewController {
 
     
     }
-
     
+    
+    @IBAction func zoekOpCategorie(_ sender: UIButton) {
 
-    @IBAction func zoekenOpCategorie(_ sender: Any) {
         
-        if {
-        
-        }
-        
+        if (swReCa.isOn)
+            {
+                
+            }
     }
     
-
-    
 }
+
+
