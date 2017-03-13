@@ -462,7 +462,7 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hellingen (van dijk naar strand)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-uh-jT9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tramhaltes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-uh-jT9">
                                 <rect key="frame" x="84" y="433" width="265" height="24"/>
                                 <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -508,6 +508,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="zoekOpCategorie:" destination="wst-ro-jmq" eventType="touchUpInside" id="TRQ-Al-2GN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -618,7 +621,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="uJW-Bf-ibh" kind="relationship" relationship="viewControllers" id="lVg-dE-EjB"/>
-                        <segue destination="iTw-c7-3gH" kind="show" id="BUa-Nq-CDn"/>
+                        <segue destination="iTw-c7-3gH" kind="show" identifier="segue_recent" id="BUa-Nq-CDn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbc-lu-drx" userLabel="First Responder" sceneMemberID="firstResponder"/>
