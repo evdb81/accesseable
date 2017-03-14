@@ -35,6 +35,8 @@ private init(){
     parser.parseSanitair(context: persistentContainer.viewContext)
     parser.parseVPP(context: persistentContainer.viewContext)
     parser.parsePOI(context: persistentContainer.viewContext)
+    parser.parseInfokantoor(context: persistentContainer.viewContext)
+    parser.parseLogies(context: persistentContainer.viewContext)
     
 }
 
