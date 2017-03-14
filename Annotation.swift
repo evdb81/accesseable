@@ -21,6 +21,7 @@ public class MyAnnotation:NSObject, MKAnnotation
     {
         self.coordinate = CLLocationCoordinate2DMake(info.lat, info.lon)
         self.title = info.naam
+        self.logo = Info.png
     }
     
     
@@ -48,7 +49,7 @@ public class MyAnnotation:NSObject, MKAnnotation
     init(san:Sanitair)
     {
         self.coordinate = CLLocationCoordinate2DMake(san.lat, san.lon)
-        self.title = "sanitair"
+        self.title = san.naam
     }
     
     
