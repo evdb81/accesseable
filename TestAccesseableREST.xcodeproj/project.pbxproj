@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4916C9EC1E7819450017A047 /* Info copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4916C9EA1E7819450017A047 /* Info copy.png */; };
 		4916C9ED1E7819450017A047 /* settings-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4916C9EB1E7819450017A047 /* settings-512 copy.png */; };
+		4916C9F11E7820190017A047 /* boss_man-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 4916C9F01E7820190017A047 /* boss_man-512.png */; };
+		4916C9F31E782C7D0017A047 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916C9F21E782C7D0017A047 /* ProfileViewController.swift */; };
 		791DA6491E72A3DC0070CB0D /* BuurtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DA6451E72A3DC0070CB0D /* BuurtViewController.swift */; };
 		791DA64A1E72A3DC0070CB0D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DA6461E72A3DC0070CB0D /* InfoViewController.swift */; };
 		791DA64B1E72A3DC0070CB0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DA6471E72A3DC0070CB0D /* ViewController.swift */; };
@@ -98,6 +100,8 @@
 /* Begin PBXFileReference section */
 		4916C9EA1E7819450017A047 /* Info copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info copy.png"; sourceTree = "<group>"; };
 		4916C9EB1E7819450017A047 /* settings-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-512 copy.png"; sourceTree = "<group>"; };
+		4916C9F01E7820190017A047 /* boss_man-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boss_man-512.png"; sourceTree = "<group>"; };
+		4916C9F21E782C7D0017A047 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		791DA6451E72A3DC0070CB0D /* BuurtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuurtViewController.swift; path = TestAccesseableREST/BuurtViewController.swift; sourceTree = "<group>"; };
 		791DA6461E72A3DC0070CB0D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = TestAccesseableREST/InfoViewController.swift; sourceTree = "<group>"; };
 		791DA6471E72A3DC0070CB0D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = TestAccesseableREST/ViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 		79CC2FF51E71869600151B6D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4916C9F01E7820190017A047 /* boss_man-512.png */,
 				791DA64D1E72A3F40070CB0D /* about.png */,
 				791DA64E1E72A3F40070CB0D /* abt.png */,
 				791DA64F1E72A3F40070CB0D /* accesseable.png */,
@@ -327,6 +332,7 @@
 				7925B9ED1E77FCEE000202FF /* DAORecent.swift */,
 				7925B9EF1E77FCF6000202FF /* Recent.swift */,
 				7925B9E91E77FA6D000202FF /* Favorieten.swift */,
+				4916C9F21E782C7D0017A047 /* ProfileViewController.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -448,6 +454,7 @@
 				791DA6D01E72A3F50070CB0D /* ZZZ.png in Resources */,
 				791DA6AB1E72A3F50070CB0D /* m4.png in Resources */,
 				791DA6B11E72A3F50070CB0D /* pijl.svg in Resources */,
+				4916C9F11E7820190017A047 /* boss_man-512.png in Resources */,
 				791DA6C21E72A3F50070CB0D /* State-of-the-art_full_hor.jpg in Resources */,
 				791DA6C71E72A3F50070CB0D /* voldoetNietTranspWhite.png in Resources */,
 				791DA6C91E72A3F50070CB0D /* voldoetTranspWhite.png in Resources */,
@@ -477,6 +484,7 @@
 				79CC2FBE1E7147E700151B6D /* TramViewController.swift in Sources */,
 				79E469401E769974004B2FA9 /* Annotation.swift in Sources */,
 				7925B9EA1E77FA6D000202FF /* Favorieten.swift in Sources */,
+				4916C9F31E782C7D0017A047 /* ProfileViewController.swift in Sources */,
 				79A923EC1E72BEDF0079B993 /* BuurtCategorieënViewController.swift in Sources */,
 				791DA64A1E72A3DC0070CB0D /* InfoViewController.swift in Sources */,
 				79CC2FBC1E7147E700151B6D /* AppDelegate.swift in Sources */,
