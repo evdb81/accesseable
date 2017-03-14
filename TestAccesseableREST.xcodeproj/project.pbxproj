@@ -83,6 +83,8 @@
 		7925B9EC1E77FA7A000202FF /* DAOFavorieten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925B9EB1E77FA7A000202FF /* DAOFavorieten.swift */; };
 		7925B9EE1E77FCEE000202FF /* DAORecent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925B9ED1E77FCEE000202FF /* DAORecent.swift */; };
 		7925B9F01E77FCF6000202FF /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925B9EF1E77FCF6000202FF /* Recent.swift */; };
+		7925B9F31E7817D0000202FF /* Info copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7925B9F11E7817D0000202FF /* Info copy.png */; };
+		7925B9F41E7817D0000202FF /* settings-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7925B9F21E7817D0000202FF /* settings-512 copy.png */; };
 		79A923EC1E72BEDF0079B993 /* BuurtCategorieënViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A923EB1E72BEDF0079B993 /* BuurtCategorieënViewController.swift */; };
 		79CC2FBC1E7147E700151B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CC2FBB1E7147E700151B6D /* AppDelegate.swift */; };
 		79CC2FBE1E7147E700151B6D /* TramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CC2FBD1E7147E700151B6D /* TramViewController.swift */; };
@@ -172,6 +174,8 @@
 		7925B9EB1E77FA7A000202FF /* DAOFavorieten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOFavorieten.swift; sourceTree = "<group>"; };
 		7925B9ED1E77FCEE000202FF /* DAORecent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAORecent.swift; sourceTree = "<group>"; };
 		7925B9EF1E77FCF6000202FF /* Recent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
+		7925B9F11E7817D0000202FF /* Info copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info copy.png"; sourceTree = "<group>"; };
+		7925B9F21E7817D0000202FF /* settings-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-512 copy.png"; sourceTree = "<group>"; };
 		79A923EB1E72BEDF0079B993 /* BuurtCategorieënViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BuurtCategorieënViewController.swift"; path = "TestAccesseableREST/BuurtCategorieënViewController.swift"; sourceTree = "<group>"; };
 		79CC2FB81E7147E600151B6D /* TestAccesseableREST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAccesseableREST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CC2FBB1E7147E700151B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 		79CC2FF51E71869600151B6D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7925B9F11E7817D0000202FF /* Info copy.png */,
+				7925B9F21E7817D0000202FF /* settings-512 copy.png */,
 				494970071E77DD950022DF96 /* Info copy.png */,
 				494970081E77DD950022DF96 /* settings-512 copy.png */,
 				791DA64D1E72A3F40070CB0D /* about.png */,
@@ -432,6 +438,7 @@
 				791DA6901E72A3F50070CB0D /* abt.png in Resources */,
 				791DA6C51E72A3F50070CB0D /* voldoetNiet.png in Resources */,
 				791DA69D1E72A3F50070CB0D /* Erasmus.png in Resources */,
+				7925B9F41E7817D0000202FF /* settings-512 copy.png in Resources */,
 				79CC2FC61E7147E700151B6D /* Assets.xcassets in Resources */,
 				791DA6B31E72A3F50070CB0D /* plus_inv.png in Resources */,
 				791DA6A31E72A3F50070CB0D /* Info.png in Resources */,
@@ -461,6 +468,7 @@
 				791DA69B1E72A3F50070CB0D /* duim_oranje.png in Resources */,
 				791DA6A71E72A3F50070CB0D /* label_informatief.jpg in Resources */,
 				494970091E77DD950022DF96 /* Info copy.png in Resources */,
+				7925B9F31E7817D0000202FF /* Info copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
