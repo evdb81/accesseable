@@ -72,7 +72,7 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
         
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
-   // cell?.textLabel?.text = requestInfo.text
+        cell?.textLabel?.text = requestInfo.text
         
     return cell!
     }
