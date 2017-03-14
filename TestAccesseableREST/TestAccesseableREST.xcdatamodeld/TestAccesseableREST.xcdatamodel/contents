@@ -1,134 +1,134 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Infokantoor" representedClassName="Infokantoor" syncable="YES" codeGenerationType="class">
-    <attribute name="adres_bus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="adres_nr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="adres_straat" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="balie_data" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="balie_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="circulatie_horizontaal_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="circulatie_lift_deur" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="circulatie_lift_deur_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="circulatie_lift_kooi" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="circulatie_lift_kooi_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="circulatie_route_smalste_punt_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="circulatie_route_toilet_kleinste_draaicirkel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="circulatie_route_toilet_kleinste_draaicirkel_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="circulatie_route_toilet_smalste_punt" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="circulatie_verticaal_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="deelgemeente" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="expositieruimte_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="folders_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="gemeente" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="gsm" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="id_westkans" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="id_westtoer" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="inkom_draaicirkel_na" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="inkom_draaicirkel_na_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="inkom_draaicirkel_voor" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="inkom_draaicirkel_voor_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="inkom_drempel" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="inkom_drempel_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="inkom_hellend_vlak_hoogteverschil" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="inkom_hellend_vlak_pct" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="inkom_hellend_vlak_pct_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="inkom_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="inkomdeur_breedte" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="inkomdeur_breedte_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="naam" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="openingsuren" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_aanduiding_omlijning" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_aanduiding_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_aanduiding_verkeersbord" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_aanduiding_zichtbaar" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_breedte_data" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="parking_breedte_tekst" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_breedte_uitstapzone_tekst" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_lengte_data" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="parking_lengte_tekst" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_lengte_uitstapzone_tekst" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_ondergrond_materiaal" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_ondergrond_materiaal_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_orientatie" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="parking_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="pnr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="regio" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="subtype" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="tel" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="toegangspad_breedte" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="toegangspad_breedte_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toegangspad_drempel" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toegangspad_drempel_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toegangspad_helling_pct" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toegangspad_helling_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toegangspad_hoogteverschil_helling" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="toegangspad_ondergrond" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toegangspad_ondergrond_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toegangspad_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_beugels" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="toilet_beugels_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_deur_breedte" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="toilet_deur_breedte_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_deur_draaicirkel_voor" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="toilet_deur_draaicirkel_voor_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_draaicirkel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="toilet_draaicirkel_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_ruimte" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_ruimtenaast" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="toilet_ruimtenaast_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_ruimtevoor" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_ruimtevoor_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_wastafel_locatie" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_wastafel_locatie_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_wastafel_onderrijdbaar" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="toilet_wastafel_onderrijdbaar_score" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_fiche" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_picture_extra1" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_picture_extra2" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_picture_main" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_picture_toilet" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_toevla" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="voorzieningen_blinden_doven" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="web" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-</entity>
-<entity name="Logement" representedClassName="Logement" syncable="YES" codeGenerationType="class">
-    <attribute name="adres_bus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="adres_nr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="adres_straat" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="deelgemeente" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="fax" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="gemeente" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="gsm" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="id_tvl" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="id_westkans" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="id_westtoer" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="naam" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="postcode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="regio" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="tel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_picture_extra1" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_picture_extra2" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_picture_main" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_picture_toilet" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="url_toevla" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="web" optional="YES" attributeType="String" syncable="YES"/>
-    <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-    <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-</entity>
+        <attribute name="adres_bus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="adres_nr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="adres_straat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="balie_data" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="balie_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="circulatie_horizontaal_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="circulatie_lift_deur" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="circulatie_lift_deur_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="circulatie_lift_kooi" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="circulatie_lift_kooi_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="circulatie_route_smalste_punt_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="circulatie_route_toilet_kleinste_draaicirkel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="circulatie_route_toilet_kleinste_draaicirkel_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="circulatie_route_toilet_smalste_punt" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="circulatie_verticaal_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deelgemeente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expositieruimte_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="folders_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gemeente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gsm" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id_westkans" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_westtoer" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inkom_draaicirkel_na" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inkom_draaicirkel_na_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inkom_draaicirkel_voor" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inkom_draaicirkel_voor_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inkom_drempel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inkom_drempel_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inkom_hellend_vlak_hoogteverschil" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inkom_hellend_vlak_pct" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inkom_hellend_vlak_pct_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inkom_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inkomdeur_breedte" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inkomdeur_breedte_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="naam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="openingsuren" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_aanduiding_omlijning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_aanduiding_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_aanduiding_verkeersbord" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_aanduiding_zichtbaar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_breedte_data" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="parking_breedte_tekst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_breedte_uitstapzone_tekst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_lengte_data" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="parking_lengte_tekst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_lengte_uitstapzone_tekst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_ondergrond_materiaal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_ondergrond_materiaal_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_orientatie" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parking_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pnr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="regio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subtype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toegangspad_breedte" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toegangspad_breedte_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toegangspad_drempel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toegangspad_drempel_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toegangspad_helling_pct" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toegangspad_helling_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toegangspad_hoogteverschil_helling" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toegangspad_ondergrond" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toegangspad_ondergrond_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toegangspad_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_beugels" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toilet_beugels_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_deur_breedte" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toilet_deur_breedte_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_deur_draaicirkel_voor" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toilet_deur_draaicirkel_voor_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_draaicirkel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toilet_draaicirkel_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_ruimte" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_ruimtenaast" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toilet_ruimtenaast_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_ruimtevoor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_ruimtevoor_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_wastafel_locatie" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_wastafel_locatie_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_wastafel_onderrijdbaar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toilet_wastafel_onderrijdbaar_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_fiche" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_picture_extra1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_picture_extra2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_picture_main" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_picture_toilet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_toevla" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voorzieningen_blinden_doven" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="web" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Logement" representedClassName="Logement" syncable="YES" codeGenerationType="class">
+        <attribute name="adres_bus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="adres_nr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="adres_straat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deelgemeente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gemeente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gsm" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id_tvl" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id_westkans" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_westtoer" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="naam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postcode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="regio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_picture_extra1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_picture_extra2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_picture_main" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_picture_toilet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_toevla" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="web" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="POI" representedClassName="POI" syncable="YES" codeGenerationType="class">
         <attribute name="adres_bus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="adres_nr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -259,7 +259,7 @@
         <attribute name="fax" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="gemeente" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gsm" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="id_westkans" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id_westkans" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id_westtoer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -303,6 +303,7 @@
         <attribute name="kostprijs" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="naam" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="openingsuren" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="postnummer" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="regio" optional="YES" attributeType="String" syncable="YES"/>
@@ -345,11 +346,11 @@
         <attribute name="zone_id" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="VPP" representedClassName="VPP" syncable="YES" codeGenerationType="class">
-        <attribute name="adres_nr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="adres_nr" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="adres_straat" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="deelgemeente" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gemeente" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id_westkans" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id_westkans" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="parking_aanduiding_omlijning" optional="YES" attributeType="String" syncable="YES"/>
@@ -364,7 +365,7 @@
         <attribute name="parking_lengte_uitstapzone_tekst" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="parking_ondergrond_materiaal" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="parking_orientatie" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="postcode" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="postcode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="regio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url_picture_main" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -375,7 +376,7 @@
         <element name="Logement" positionX="18" positionY="108" width="128" height="450"/>
         <element name="POI" positionX="-18" positionY="90" width="128" height="1845"/>
         <element name="Restaurant" positionX="-36" positionY="81" width="128" height="555"/>
-        <element name="Sanitair" positionX="-63" positionY="63" width="128" height="675"/>
+        <element name="Sanitair" positionX="-63" positionY="63" width="128" height="690"/>
         <element name="Tramhalte" positionX="-63" positionY="-18" width="128" height="210"/>
         <element name="VPP" positionX="-54" positionY="72" width="128" height="405"/>
     </elements>

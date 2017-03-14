@@ -10,45 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tram View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="TramViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RtC-pY-fFJ">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TRAM JSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5B-Oa-5y6">
-                                <rect key="frame" x="105" y="72" width="240" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="FTh-PA-2pn"/>
-                    <connections>
-                        <outlet property="tvTramhaltes" destination="RtC-pY-fFJ" id="Vyt-n1-Wdh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3514" y="-143"/>
-        </scene>
         <!--STARTPAGINA-->
         <scene sceneID="fw4-7p-vYw">
             <objects>
@@ -595,7 +556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbI-Zn-ndp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2241" y="-111"/>
+            <point key="canvasLocation" x="2297" y="-43"/>
         </scene>
         <!--INFO-->
         <scene sceneID="80n-Ux-ecN">
@@ -636,7 +597,7 @@
         <!--IN DE BUURT-->
         <scene sceneID="euo-T6-3D4">
             <objects>
-                <viewController title="IN DE BUURT" id="pSV-qe-6ui" customClass="BuurtViewController" customModule="TestAccesseableREST" sceneMemberID="viewController">
+                <viewController title="IN DE BUURT" id="pSV-qe-6ui" customClass="BuurtViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="182-dj-Sfk"/>
                         <viewControllerLayoutGuide type="bottom" id="AIb-OG-e90"/>
@@ -656,8 +617,14 @@
                                     <segue destination="wst-ro-jmq" kind="show" identifier="segue_categorieMap" id="HPe-GO-oG5"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJA-Z5-3Og">
+                                <rect key="frame" x="0.0" y="107" width="375" height="540"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pSV-qe-6ui" id="hg2-Ki-Pqo"/>
+                                </connections>
+                            </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xVR-Sy-qan">
-                                <rect key="frame" x="8" y="71" width="251" height="29"/>
+                                <rect key="frame" x="0.0" y="71" width="251" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <segments>
@@ -670,12 +637,6 @@
                                     <action selector="mapTypeChosen:" destination="pSV-qe-6ui" eventType="valueChanged" id="M0n-Dh-zqS"/>
                                 </connections>
                             </segmentedControl>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJA-Z5-3Og">
-                                <rect key="frame" x="0.0" y="107" width="375" height="540"/>
-                                <connections>
-                                    <outlet property="delegate" destination="pSV-qe-6ui" id="hg2-Ki-Pqo"/>
-                                </connections>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -919,7 +880,7 @@
         <!--Navigation Controller-->
         <scene sceneID="a06-uj-sdH">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cwv-uD-kpC" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenKeyboardAppears="YES" id="Cwv-uD-kpC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ode-sn-4Im">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -932,7 +893,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FgE-fL-vZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-785" y="-750"/>
+            <point key="canvasLocation" x="-649" y="-725"/>
         </scene>
     </scenes>
     <resources>
@@ -945,6 +906,6 @@
         <image name="settings-512 copy.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="edE-gC-gue"/>
+        <segue reference="5z3-9o-GYy"/>
     </inferredMetricsTieBreakers>
 </document>

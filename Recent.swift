@@ -10,6 +10,9 @@ import Foundation
 
 public class Recent{
     
+//Wanneer de gebruiker het detailscherm bekijkt van een locatie, dient die als een waarde van Recent aangemaakt te worden (init) en opgeslagen te worden in de Array [recenteLocaties]
+ //Nadien kan via DAO deze Array weergegeven worden in een Table View op het 'MIJN LOCATIES' scherm
+    
     var recIdWesthoek:Int
     var recNaam:String
     
