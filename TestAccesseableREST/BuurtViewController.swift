@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreData
+import
 
 class BuurtViewController: UIViewController, MKMapViewDelegate {
     
@@ -63,10 +64,10 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
             //we willen layout hergebruiken indien het bestaat
             //-> niet voor elke pin opnieuw laten tekenen
             let identifier = "pin"
-            var pinView: MKPinAnnotationView
+            var pinView: MKAnnotationView
             
             //check of pinView al bestaat
-            if let dequedView = mapview.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
+            if let dequedView = mapview.dequeueReusableAnnotationView(withIdentifier: identifier)
             {
                 //layout bestaat al -> hergebruiken en annotatie instellen
                 dequedView.annotation = pin
@@ -75,11 +76,13 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
             else
             {
                 //layout bestaat nog niet -> aanmaken
-                pinView = MKPinAnnotationView.init(annotation: pin, reuseIdentifier: identifier)
+                pinView = MKAnnotationView.init(annotation: pin, reuseIdentifier: identifier)
                 //instellen pin
-                pinView.animatesDrop = true
+                pinView.image = UIImage.init(named: pin.logo)
+                pinView.canShowCallout = true
+                pinView.CGSizeMake(2, 4)
 
-            }
+        }
             
             //klaar met annotatie, op kaart zetten
             return pinView
