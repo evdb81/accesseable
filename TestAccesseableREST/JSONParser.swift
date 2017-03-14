@@ -183,7 +183,12 @@ public class JSONParser{
                 let idStr = jsonObject.value(forKey: "ID_WESTKANS") as! String
                 volgendeVpp.id_westkans = String.init(idStr)!
                 
-                //rest keys nog niet aangepast
+                
+                let latStr = jsonObject.value(forKey: "LAT") as! String
+                volgendeVpp.lat = Double.init(latStr)!
+                let lonStr = jsonObject.value(forKey: "LON") as! String
+                volgendeVpp.lon = Double.init(lonStr)!
+
             }
         }catch{
             print("foutieve informatie parkeerplaatsen")
@@ -210,12 +215,67 @@ public class JSONParser{
                 //entiteit aanmaken, context = verwijzing naar waar opgeslagen
                 let volgendeInfokantoor = Infokantoor(context: context)
                 
+                
+                //strings omzetten waar nodig
+                let idStr = jsonObject.value(forKey: "ID_WESTKANS") as! String
+                volgendeInfokantoor.id_westkans = String.init(idStr)!
+                
+                
+                let latStr = jsonObject.value(forKey: "LAT") as! String
+                volgendeInfokantoor.lat = Double.init(latStr)!
+                let lonStr = jsonObject.value(forKey: "LON") as! String
+                volgendeInfokantoor.lon = Double.init(lonStr)!
+
+                
             }
         }catch{
             print("foutieve informatie infokantoren")
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
+    
+    
+    //LOGIES
+    
+    func parseLogies( context: NSManagedObjectContext)
+    {
+        //waar staan de gegevens
+        let url = URL(string:"http://web10.weopendata.com/measurements/logies")
+        //exceptions mogelijk bv. geen internet
+        do{
+            //data binnentrekken van url en in array opslaan
+            let jsonData = try Data(contentsOf: url!)
+            let jsonArray:NSArray = try JSONSerialization.jsonObject(with: jsonData) as! NSArray
+            
+            //alle items aflopen in de jsonArray (om gegevens uit te halen)
+            for item in jsonArray{
+                
+                let jsonObject:NSDictionary = item as! NSDictionary
+                //entiteit aanmaken, context = verwijzing naar waar opgeslagen
+                let volgendeLogie = Logement(context: context)
+                
+                
+                //strings omzetten waar nodig
+                let idStr = jsonObject.value(forKey: "ID_WESTKANS") as! String
+                volgendeLogie.id_westkans = String.init(idStr)!
+                
+                let naamStr = jsonObject.value(forKey: "NAAM") as! String
+                volgendeLogie.naam = String.init(naamStr)
+                
+                let latStr = jsonObject.value(forKey: "LAT") as! String
+                volgendeLogie.lat = Double.init(latStr)!
+                let lonStr = jsonObject.value(forKey: "LON") as! String
+                volgendeLogie.lon = Double.init(lonStr)!
+                
+                
+            }
+        }catch{
+            print("foutieve informatie infokantoren")
+        }
+        //geen return nodig omdat je gegevens direct opslaat in je databank
+    }
+    
+
     
     
 }
