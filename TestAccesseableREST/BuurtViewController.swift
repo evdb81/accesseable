@@ -51,17 +51,17 @@ class BuurtViewController: UIViewController {
         }
     }
     
-    
-    func checkLocationAuthorization()     {
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse
-        { //positie weergeven op kaart
-            //!!!!! niet vergeten toestemming in info.plist toe te voegen
-            mapview.showsUserLocation = true
-        }else
-        { //toestemming vragen
-            locationManager.requestWhenInUseAuthorization()
-            mapview.showsUserLocation = true
-        }
+    func checkLocationAuthorization(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+            
+           switch status {
+           case .authorizedWhenInUse: mapview.showsUserLocation = true
+            locationManager.startUpdatingLocation()
+            case .authorizedAlways: mapview.showsUserLocation = true
+            locationManager.startUpdatingLocation()
+            case .denied: mapview.showsUserLocation = false
+            print("computer says no")
+            default: break
+            }
     }
 
     
