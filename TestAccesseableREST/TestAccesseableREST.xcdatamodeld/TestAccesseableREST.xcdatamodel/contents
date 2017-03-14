@@ -349,7 +349,7 @@
         <attribute name="adres_straat" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="deelgemeente" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gemeente" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="id_westkans" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id_westkans" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="parking_aanduiding_omlijning" optional="YES" attributeType="String" syncable="YES"/>

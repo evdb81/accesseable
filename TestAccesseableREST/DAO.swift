@@ -32,6 +32,9 @@ private init(){
     //parsen en laten opslaan binnen context: maak een parse 'tramhaltes' die de array gaat opvullen
     parser.parseTramhaltes(context: persistentContainer.viewContext)
     parser.parseReca(context: persistentContainer.viewContext)
+    parser.parseSanitair(context: persistentContainer.viewContext)
+    parser.parseVPP(context: persistentContainer.viewContext)
+    //parser.p
     
 }
 

@@ -74,9 +74,6 @@ public class JSONParser{
                 volgendeReca.lat = Double.init(latStr)!
                 let lonStr = jsonObject.value(forKey: "LON") as! String
                 volgendeReca.lon = Double.init(lonStr)!
-                
-                
-                //rest keys nog niet aangepast
             }
         }
         catch{
@@ -84,9 +81,6 @@ public class JSONParser{
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
-    
-    
-    
     
     func parseSanitair( context: NSManagedObjectContext)
     {
@@ -134,7 +128,7 @@ public class JSONParser{
                 
                 //strings omzetten waar nodig
                 let idStr = jsonObject.value(forKey: "ID_WESTKANS") as! String
-                volgendeVpp.id_westkans = Int32.init(idStr)!
+                volgendeVpp.id_westkans = String.init(idStr)!
                 
                 //rest keys nog niet aangepast
             }
