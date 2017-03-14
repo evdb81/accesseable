@@ -9,7 +9,6 @@
 import UIKit
 import MapKit
 import CoreData
-import
 
 class BuurtViewController: UIViewController, MKMapViewDelegate {
     
@@ -36,8 +35,6 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
     
     //pins vd locaties op map toevoegen
     func createAnnotations(){
-        
-        print("\(haltes)")
         
         for halte in haltes{
             let annotation:MyAnnotation = MyAnnotation.init(halte: halte)
@@ -80,9 +77,7 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
                 //instellen pin
                 pinView.image = UIImage.init(named: pin.logo)
                 pinView.canShowCallout = true
-                pinView.CGSizeMake(2, 4)
-
-        }
+            }
             
             //klaar met annotatie, op kaart zetten
             return pinView

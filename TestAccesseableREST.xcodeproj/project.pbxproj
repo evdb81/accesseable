@@ -84,7 +84,6 @@
 		7925B9F41E7817D0000202FF /* settings-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7925B9F21E7817D0000202FF /* settings-512 copy.png */; };
 		79A923EC1E72BEDF0079B993 /* BuurtCategorieënViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A923EB1E72BEDF0079B993 /* BuurtCategorieënViewController.swift */; };
 		79CC2FBC1E7147E700151B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CC2FBB1E7147E700151B6D /* AppDelegate.swift */; };
-		79CC2FBE1E7147E700151B6D /* TramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CC2FBD1E7147E700151B6D /* TramViewController.swift */; };
 		79CC2FC11E7147E700151B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79CC2FBF1E7147E700151B6D /* Main.storyboard */; };
 		79CC2FC41E7147E700151B6D /* TestAccesseableREST.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79CC2FC21E7147E700151B6D /* TestAccesseableREST.xcdatamodeld */; };
 		79CC2FC61E7147E700151B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CC2FC51E7147E700151B6D /* Assets.xcassets */; };
@@ -174,7 +173,6 @@
 		79A923EB1E72BEDF0079B993 /* BuurtCategorieënViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BuurtCategorieënViewController.swift"; path = "TestAccesseableREST/BuurtCategorieënViewController.swift"; sourceTree = "<group>"; };
 		79CC2FB81E7147E600151B6D /* TestAccesseableREST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAccesseableREST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CC2FBB1E7147E700151B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79CC2FBD1E7147E700151B6D /* TramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TramViewController.swift; path = TestAccesseableREST/TramViewController.swift; sourceTree = "<group>"; };
 		79CC2FC01E7147E700151B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79CC2FC31E7147E700151B6D /* TestAccesseableREST.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestAccesseableREST.xcdatamodel; sourceTree = "<group>"; };
 		79CC2FC51E7147E700151B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -313,7 +311,6 @@
 				791DA6461E72A3DC0070CB0D /* InfoViewController.swift */,
 				791DA6471E72A3DC0070CB0D /* ViewController.swift */,
 				791DA6481E72A3DC0070CB0D /* ZoekenViewController.swift */,
-				79CC2FBD1E7147E700151B6D /* TramViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -473,7 +470,6 @@
 			files = (
 				79CC2FD11E714DB900151B6D /* DAO.swift in Sources */,
 				79CC2FD31E71504900151B6D /* JSONParser.swift in Sources */,
-				79CC2FBE1E7147E700151B6D /* TramViewController.swift in Sources */,
 				79E469401E769974004B2FA9 /* Annotation.swift in Sources */,
 				7925B9EA1E77FA6D000202FF /* Favorieten.swift in Sources */,
 				79A923EC1E72BEDF0079B993 /* BuurtCategorieënViewController.swift in Sources */,

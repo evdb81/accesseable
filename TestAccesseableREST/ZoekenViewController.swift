@@ -54,6 +54,10 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
         let requestVPP = NSFetchRequest<NSFetchRequestResult>(entityName:"VPP")
         requestVPP.returnsObjectsAsFaults = false
         
+     
+        //array aanmaken van alle entiteiten om op te zoeken
+        let requestList = [requestInfo, requestLoge, requestPOI, requestReca, requestSani, requestTram, requestVPP]
+        
         //functie om te sorten -> overslaan, is extra
     }
     
@@ -72,7 +76,7 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
         
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
-        cell?.textLabel?.text = requestInfo.text
+        //cell?.textLabel?.text = requestInfo.text
         
     return cell!
     }
