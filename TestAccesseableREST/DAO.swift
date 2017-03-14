@@ -33,6 +33,7 @@ private init(){
     parser.parseTramhaltes(context: persistentContainer.viewContext)
 }
 
+    
 //Tramhaltes
 func getAllTramHaltes() -> [Tramhalte]
 {

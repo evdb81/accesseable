@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreData
 
-class BuurtViewController: UIViewController {
+class BuurtViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapview: MKMapView!
     var locationManager = CLLocationManager.init()
@@ -22,7 +22,7 @@ class BuurtViewController: UIViewController {
     //elke keer scherm eerste keer wordt geladen
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkLocationAuthorization()
+        locationManager.requestWhenInUseAuthorization()
         createRegion()
         createAnnotations()
     }
@@ -35,6 +35,9 @@ class BuurtViewController: UIViewController {
     
     //pins vd locaties op map toevoegen
     func createAnnotations(){
+        
+        print("\(haltes)")
+        
         for halte in haltes{
             let annotation:MyAnnotation = MyAnnotation.init(halte: halte)
             mapview.addAnnotation(annotation)
@@ -51,17 +54,52 @@ class BuurtViewController: UIViewController {
         }
     }
     
-    
-    func checkLocationAuthorization()     {
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse
-        { //positie weergeven op kaart
-            //!!!!! niet vergeten toestemming in info.plist toe te voegen
-            mapview.showsUserLocation = true
-        }else
-        { //toestemming vragen
-            locationManager.requestWhenInUseAuthorization()
-            mapview.showsUserLocation = true
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        //is annotation een POI
+        //if let -> kortere schrijfwijze om variabele te initialiseren en direct check of gelukt
+        if let pin = annotation as? MyAnnotation
+        {
+            //we willen layout hergebruiken indien het bestaat
+            //-> niet voor elke pin opnieuw laten tekenen
+            let identifier = "pin"
+            var pinView: MKPinAnnotationView
+            
+            //check of pinView al bestaat
+            if let dequedView = mapview.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
+            {
+                //layout bestaat al -> hergebruiken en annotatie instellen
+                dequedView.annotation = pin
+                pinView = dequedView
+            }
+            else
+            {
+                //layout bestaat nog niet -> aanmaken
+                pinView = MKPinAnnotationView.init(annotation: pin, reuseIdentifier: identifier)
+                //instellen pin
+                pinView.animatesDrop = true
+
+            }
+            
+            //klaar met annotatie, op kaart zetten
+            return pinView
         }
+        //geen van onze annotaties, niet weergeven
+        return nil
+    }
+
+    
+    func checkLocationAuthorization(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+            
+           switch status {
+           case .authorizedWhenInUse: mapview.showsUserLocation = true
+            locationManager.startUpdatingLocation()
+            case .authorizedAlways: mapview.showsUserLocation = true
+            locationManager.startUpdatingLocation()
+            case .denied: mapview.showsUserLocation = false
+            print("computer says no")
+            default: break
+            }
     }
 
     

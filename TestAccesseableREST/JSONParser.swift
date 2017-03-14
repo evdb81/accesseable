@@ -15,7 +15,7 @@ public class JSONParser{
     func parseTramhaltes( context: NSManagedObjectContext)
     {
         //waar staan de gegevens
-        let url = URL(string:"https://web10.weopendata.com/measurements/tram")
+        let url = URL(string:"http://web10.weopendata.com/measurements/tram")
         //exceptions mogelijk bv. geen interent
         do{
             //data binnentrekken van url en in array opslaan
@@ -35,10 +35,15 @@ public class JSONParser{
                 
                 volgendeTramHalte.stop_name = jsonObject.value(forKey: "stop_name") as? String
                 
+                let latStr = jsonObject.value(forKey: "stop_lat") as! String
+                volgendeTramHalte.stop_lat = Double.init(latStr)!
+                let lonStr = jsonObject.value(forKey: "stop_lon") as! String
+                volgendeTramHalte.stop_lon = Double.init(lonStr)!
+                
                 //rest keys nog niet aangepast
             }
         }catch{
-            print("waerkt ni jung")
+            print("Waerkt Ni")
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
@@ -47,7 +52,7 @@ public class JSONParser{
     func parseSanitair( context: NSManagedObjectContext)
     {
         //waar staan de gegevens
-        let url = URL(string:"https://web10.weopendata.com/measurements/sanitair")
+        let url = URL(string:"http://web10.weopendata.com/measurements/sanitair")
         //exceptions mogelijk bv. geen interent
         do{
             //data binnentrekken van url en in array opslaan
@@ -74,7 +79,7 @@ public class JSONParser{
       func parseVPP (context: NSManagedObjectContext)
     {
         //waar staan de gegevens
-        let url = URL(string:"https://web10.weopendata.com/measurements/vpp")
+        let url = URL(string:"http://web10.weopendata.com/measurements/vpp")
         //exceptions mogelijk bv. geen interent
         do{
             //data binnentrekken van url en in array opslaan
@@ -103,7 +108,7 @@ public class JSONParser{
     func parseReca( context: NSManagedObjectContext)
     {
         //waar staan de gegevens
-        let url = URL(string:"https://web10.weopendata.com/measurements/reca")
+        let url = URL(string:"http://web10.weopendata.com/measurements/reca")
         //exceptions mogelijk bv. geen interent
         do{
             //data binnentrekken van url en in array opslaan
@@ -136,7 +141,7 @@ public class JSONParser{
     func parseInfokantoor( context: NSManagedObjectContext)
     {
         //waar staan de gegevens
-        let url = URL(string:"https://web10.weopendata.com/measurements/info")
+        let url = URL(string:"http://web10.weopendata.com/measurements/info")
         //exceptions mogelijk bv. geen internet
         do{
             //data binnentrekken van url en in array opslaan
