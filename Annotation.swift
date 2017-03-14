@@ -8,7 +8,7 @@
 
 import Foundation
 import MapKit
-import CoreData
+
 
 public class MyAnnotation:NSObject, MKAnnotation
 {
@@ -20,15 +20,18 @@ public class MyAnnotation:NSObject, MKAnnotation
         self.coordinate = CLLocationCoordinate2DMake(info.lat, info.lon)
     }
     
+    
     init(log:Logement)
     {
         self.coordinate = CLLocationCoordinate2DMake(log.lat, log.lon)
     }
     
+    
     init(poi:POI)
     {
         self.coordinate = CLLocationCoordinate2DMake(poi.lat, poi.lon)
     }
+    
     
     init(reca:Restaurant)
     {
@@ -41,14 +44,18 @@ public class MyAnnotation:NSObject, MKAnnotation
         self.coordinate = CLLocationCoordinate2DMake(san.lat, san.lon)
     }
     
+    
     init(halte:Tramhalte) {
         self.coordinate = CLLocationCoordinate2DMake(halte.stop_lat, halte.stop_lon)
     }
 
+    
     init(vpp:VPP)
     {
         self.coordinate = CLLocationCoordinate2DMake(vpp.lat, vpp.lon)
     }
+   
+    
     
     
 }

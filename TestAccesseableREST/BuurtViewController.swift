@@ -8,12 +8,18 @@
 
 import UIKit
 import MapKit
+import CoreData
 
 class BuurtViewController: UIViewController {
     
     @IBOutlet weak var mapview: MKMapView!
     var locationManager = CLLocationManager.init()
     
+    let sanitair = DAO.sharedDAO.getAllSanitair()
+    let ReCa = DAO.sharedDAO.getAllReCa()
+    let haltes = DAO.sharedDAO.getAllTramHaltes()
+    
+    //elke keer scherm eerste keer wordt geladen
     override func viewDidLoad() {
         super.viewDidLoad()
         checkLocationAuthorization()
@@ -21,26 +27,21 @@ class BuurtViewController: UIViewController {
         createAnnotations()
     }
     
-    //
+    //elke keer als gebruiker terugkeert naar scherm
     func viewDidAppear(){
         createRegion()
         createAnnotations()
     }
     
-    //
+    //pins vd locaties op map toevoegen
     func createAnnotations(){
-        let sanitair = DAO.sharedDAO.getAllSanitair()
-        let ReCa = DAO.sharedDAO.getAllReCa()
-        let haltes = DAO.sharedDAO.getAllTramHaltes()
-       
-        
         for halte in haltes{
             let annotation:MyAnnotation = MyAnnotation.init(halte: halte)
             mapview.addAnnotation(annotation)
         }
     
-        for toilet in sanitair{
-           let annotation2:MyAnnotation = MyAnnotation.init(toilet: toilet)
+        for san in sanitair{
+           let annotation2:MyAnnotation = MyAnnotation.init(san: san)
                mapview.addAnnotation(annotation2)
         }
         
@@ -81,9 +82,10 @@ class BuurtViewController: UIViewController {
         case 0: mapview.mapType = .standard
         case 1: mapview.mapType = .satellite
         case 2: mapview.mapType = .hybrid
-        default:
-            break
+        default:break
         }
-}
+    }
+
+
 }
 
