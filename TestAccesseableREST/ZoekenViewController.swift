@@ -7,29 +7,50 @@
 //
 
 import UIKit
+import CoreData
 
-class ZoekenViewController: UIViewController {
-
+class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+    
+    
+    @IBOutlet weak var tvZoekResultaten: UITableView!
+    @IBOutlet weak var zoekbalk: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    /zoeken op woord in titel, omschrijving & straatnaam
+    func zoekbalkActie (_searchBar: UISearchBar, textDidChange searchText: String)
+    {
+        //request voor items
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName:request.returnsObjectsAsFaults) = false
+        
+        //omschrijving hoe gegevens te sorteren
+        let sorteren = NSSortDescription(key:"id_westhoek", ascending: true) request.SortDescriptors = [sorteren]
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //weergeven in tabel
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+   
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+    let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        
+    cell?.textLabel?.text = //uit zoekresultaat de waarde weergeven
+       
+    return cell!
+    }
+    
+    
+    
 }
