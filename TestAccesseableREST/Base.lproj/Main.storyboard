@@ -310,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUP-hm-69p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="468"/>
+            <point key="canvasLocation" x="786" y="499"/>
         </scene>
         <!--MIJN LOCATIES-->
         <scene sceneID="ch5-IT-afD">
@@ -425,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbI-Zn-ndp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063" y="-223"/>
+            <point key="canvasLocation" x="2241" y="-111"/>
         </scene>
         <!--INFO-->
         <scene sceneID="80n-Ux-ecN">
@@ -496,8 +496,11 @@
                                     <action selector="mapTypeChosen:" destination="pSV-qe-6ui" eventType="valueChanged" id="M0n-Dh-zqS"/>
                                 </connections>
                             </segmentedControl>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IJA-Z5-3Og">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJA-Z5-3Og">
                                 <rect key="frame" x="0.0" y="107" width="375" height="540"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pSV-qe-6ui" id="hg2-Ki-Pqo"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="0.94149742069999998" alpha="1" colorSpace="calibratedWhite"/>
@@ -720,7 +723,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iI2-Bn-333" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2297" y="-1643"/>
+            <point key="canvasLocation" x="2023" y="-906"/>
         </scene>
         <!--ZOEKEN-->
         <scene sceneID="nH0-jd-4ZN">
