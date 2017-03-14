@@ -34,7 +34,7 @@ private init(){
     parser.parseReca(context: persistentContainer.viewContext)
     parser.parseSanitair(context: persistentContainer.viewContext)
     parser.parseVPP(context: persistentContainer.viewContext)
-    //parser.p
+    parser.parsePOI(context: persistentContainer.viewContext)
     
 }
 
