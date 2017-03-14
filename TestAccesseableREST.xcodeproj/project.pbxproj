@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		494970091E77DD950022DF96 /* Info copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 494970071E77DD950022DF96 /* Info copy.png */; };
-		4949700A1E77DD950022DF96 /* settings-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 494970081E77DD950022DF96 /* settings-512 copy.png */; };
+		4916C9EC1E7819450017A047 /* Info copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4916C9EA1E7819450017A047 /* Info copy.png */; };
+		4916C9ED1E7819450017A047 /* settings-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4916C9EB1E7819450017A047 /* settings-512 copy.png */; };
 		791DA6491E72A3DC0070CB0D /* BuurtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DA6451E72A3DC0070CB0D /* BuurtViewController.swift */; };
 		791DA64A1E72A3DC0070CB0D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DA6461E72A3DC0070CB0D /* InfoViewController.swift */; };
 		791DA64B1E72A3DC0070CB0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DA6471E72A3DC0070CB0D /* ViewController.swift */; };
@@ -98,8 +98,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		494970071E77DD950022DF96 /* Info copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Info copy.png"; path = "../../Downloads/Info copy.png"; sourceTree = "<group>"; };
-		494970081E77DD950022DF96 /* settings-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-512 copy.png"; path = "../../Downloads/settings-512 copy.png"; sourceTree = "<group>"; };
+		4916C9EA1E7819450017A047 /* Info copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info copy.png"; sourceTree = "<group>"; };
+		4916C9EB1E7819450017A047 /* settings-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-512 copy.png"; sourceTree = "<group>"; };
 		791DA6451E72A3DC0070CB0D /* BuurtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuurtViewController.swift; path = TestAccesseableREST/BuurtViewController.swift; sourceTree = "<group>"; };
 		791DA6461E72A3DC0070CB0D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = TestAccesseableREST/InfoViewController.swift; sourceTree = "<group>"; };
 		791DA6471E72A3DC0070CB0D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = TestAccesseableREST/ViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +204,8 @@
 		79CC2FAF1E7147E600151B6D = {
 			isa = PBXGroup;
 			children = (
+				4916C9EA1E7819450017A047 /* Info copy.png */,
+				4916C9EB1E7819450017A047 /* settings-512 copy.png */,
 				79CC307B1E718AE000151B6D /* Sources */,
 				79CC307A1E718AC700151B6D /* ViewControllers */,
 				79CC2FF51E71869600151B6D /* images */,
@@ -398,7 +400,7 @@
 			files = (
 				791DA6B81E72A3F50070CB0D /* recent_Kleur.png in Resources */,
 				791DA6C11E72A3F50070CB0D /* spinner.png in Resources */,
-				4949700A1E77DD950022DF96 /* settings-512 copy.png in Resources */,
+				4916C9ED1E7819450017A047 /* settings-512 copy.png in Resources */,
 				791DA6C01E72A3F50070CB0D /* sleep.png in Resources */,
 				791DA6A91E72A3F50070CB0D /* m2.png in Resources */,
 				791DA6991E72A3F50070CB0D /* deleteFavoriet.png in Resources */,
