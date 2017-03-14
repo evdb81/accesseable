@@ -77,6 +77,10 @@
 		791DA6CE1E72A3F50070CB0D /* zeesterKleur.png in Resources */ = {isa = PBXBuildFile; fileRef = 791DA68C1E72A3F40070CB0D /* zeesterKleur.png */; };
 		791DA6CF1E72A3F50070CB0D /* ZeesterKleurFavoriet.png in Resources */ = {isa = PBXBuildFile; fileRef = 791DA68D1E72A3F40070CB0D /* ZeesterKleurFavoriet.png */; };
 		791DA6D01E72A3F50070CB0D /* ZZZ.png in Resources */ = {isa = PBXBuildFile; fileRef = 791DA68E1E72A3F40070CB0D /* ZZZ.png */; };
+		7925B9EA1E77FA6D000202FF /* Favorieten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925B9E91E77FA6D000202FF /* Favorieten.swift */; };
+		7925B9EC1E77FA7A000202FF /* DAOFavorieten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925B9EB1E77FA7A000202FF /* DAOFavorieten.swift */; };
+		7925B9EE1E77FCEE000202FF /* DAORecent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925B9ED1E77FCEE000202FF /* DAORecent.swift */; };
+		7925B9F01E77FCF6000202FF /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925B9EF1E77FCF6000202FF /* Recent.swift */; };
 		79A923EC1E72BEDF0079B993 /* BuurtCategorieënViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A923EB1E72BEDF0079B993 /* BuurtCategorieënViewController.swift */; };
 		79CC2FBC1E7147E700151B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CC2FBB1E7147E700151B6D /* AppDelegate.swift */; };
 		79CC2FBE1E7147E700151B6D /* TramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CC2FBD1E7147E700151B6D /* TramViewController.swift */; };
@@ -160,6 +164,10 @@
 		791DA68C1E72A3F40070CB0D /* zeesterKleur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zeesterKleur.png; path = TestAccesseableREST/assets/zeesterKleur.png; sourceTree = "<group>"; };
 		791DA68D1E72A3F40070CB0D /* ZeesterKleurFavoriet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ZeesterKleurFavoriet.png; path = TestAccesseableREST/assets/ZeesterKleurFavoriet.png; sourceTree = "<group>"; };
 		791DA68E1E72A3F40070CB0D /* ZZZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ZZZ.png; path = TestAccesseableREST/assets/ZZZ.png; sourceTree = "<group>"; };
+		7925B9E91E77FA6D000202FF /* Favorieten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Favorieten.swift; path = TestAccesseableREST/Favorieten.swift; sourceTree = "<group>"; };
+		7925B9EB1E77FA7A000202FF /* DAOFavorieten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOFavorieten.swift; sourceTree = "<group>"; };
+		7925B9ED1E77FCEE000202FF /* DAORecent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAORecent.swift; sourceTree = "<group>"; };
+		7925B9EF1E77FCF6000202FF /* Recent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
 		79A923EB1E72BEDF0079B993 /* BuurtCategorieënViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BuurtCategorieënViewController.swift"; path = "TestAccesseableREST/BuurtCategorieënViewController.swift"; sourceTree = "<group>"; };
 		79CC2FB81E7147E600151B6D /* TestAccesseableREST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAccesseableREST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79CC2FBB1E7147E700151B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -309,6 +317,10 @@
 				79CC2FD01E714DB900151B6D /* DAO.swift */,
 				79CC2FD21E71504900151B6D /* JSONParser.swift */,
 				79E4693F1E769974004B2FA9 /* Annotation.swift */,
+				7925B9EB1E77FA7A000202FF /* DAOFavorieten.swift */,
+				7925B9ED1E77FCEE000202FF /* DAORecent.swift */,
+				7925B9EF1E77FCF6000202FF /* Recent.swift */,
+				7925B9E91E77FA6D000202FF /* Favorieten.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -451,16 +463,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7925B9EC1E77FA7A000202FF /* DAOFavorieten.swift in Sources */,
 				79CC2FD11E714DB900151B6D /* DAO.swift in Sources */,
 				79CC2FD31E71504900151B6D /* JSONParser.swift in Sources */,
 				79CC2FBE1E7147E700151B6D /* TramViewController.swift in Sources */,
 				79E469401E769974004B2FA9 /* Annotation.swift in Sources */,
+				7925B9EA1E77FA6D000202FF /* Favorieten.swift in Sources */,
 				79A923EC1E72BEDF0079B993 /* BuurtCategorieënViewController.swift in Sources */,
 				791DA64A1E72A3DC0070CB0D /* InfoViewController.swift in Sources */,
 				79CC2FBC1E7147E700151B6D /* AppDelegate.swift in Sources */,
 				79CC2FC41E7147E700151B6D /* TestAccesseableREST.xcdatamodeld in Sources */,
 				791DA64B1E72A3DC0070CB0D /* ViewController.swift in Sources */,
+				7925B9EE1E77FCEE000202FF /* DAORecent.swift in Sources */,
 				791DA64C1E72A3DC0070CB0D /* ZoekenViewController.swift in Sources */,
+				7925B9F01E77FCF6000202FF /* Recent.swift in Sources */,
 				791DA6491E72A3DC0070CB0D /* BuurtViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

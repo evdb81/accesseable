@@ -21,14 +21,16 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
     }
     
     
-    /zoeken op woord in titel, omschrijving & straatnaam
+    //zoeken op woord in titel, omschrijving & straatnaam
     func zoekbalkActie (_searchBar: UISearchBar, textDidChange searchText: String)
     {
         //request voor items
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName:request.returnsObjectsAsFaults) = false
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName:"Sanitair")
+        request.returnsObjectsAsFaults = false
         
         //omschrijving hoe gegevens te sorteren
-        let sorteren = NSSortDescription(key:"id_westhoek", ascending: true) request.SortDescriptors = [sorteren]
+        let sorteren = NSSortDescriptor(key:"id_westhoek", ascending: true)
+        request.sortDescriptors = [sorteren]
     }
     
 
@@ -46,7 +48,7 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
         
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
-    cell?.textLabel?.text = //uit zoekresultaat de waarde weergeven
+    cell?.textLabel?.text = "IN TE VULLEN NOG!!!!"//uit zoekresultaat de waarde weergeven
        
     return cell!
     }
