@@ -536,31 +536,36 @@
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbD-BU-y0k">
                                 <rect key="frame" x="12" y="105" width="51" height="31"/>
-                                <color key="onTintColor" red="0.12941176470588237" green="0.17647058823529413" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-AU-2Il">
-                                <rect key="frame" x="12" y="157" width="51" height="31"/>
-                                <color key="onTintColor" red="0.12941176470588237" green="0.17647058823529413" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-AU-2Il">
+                                <rect key="frame" x="12" y="158" width="51" height="36.5"/>
+                                <color key="onTintColor" red="0.27058823529411763" green="0.094117647058823528" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zww-BV-lmP">
-                                <rect key="frame" x="12" y="209" width="51" height="31"/>
-                                <color key="onTintColor" red="0.12941176470588237" green="0.17647058823529413" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zww-BV-lmP">
+                                <rect key="frame" x="12" y="215.5" width="51" height="31"/>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wK4-Rw-DlL">
+                                <rect key="frame" x="12" y="267.5" width="51" height="3.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0V8-Mf-Jmm">
                                 <rect key="frame" x="12" y="314.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.12941176470588237" green="0.17647058823529413" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZL0-Bz-6Kj">
-                                <rect key="frame" x="12" y="366.5" width="51" height="31"/>
-                                <color key="onTintColor" red="0.12941176470588237" green="0.17647058823529413" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZL0-Bz-6Kj">
+                                <rect key="frame" x="12" y="370" width="51" height="31"/>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ECd-oQ-9Zh">
-                                <rect key="frame" x="12" y="421.5" width="51" height="31"/>
-                                <color key="onTintColor" red="0.12941176470588237" green="0.17647058823529413" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ECd-oQ-9Zh">
+                                <rect key="frame" x="12" y="428" width="51" height="31"/>
+                                <color key="onTintColor" red="0.25882352941176473" green="0.094117647058823528" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurants en Cafés" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-RY-AWi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurants en Cafés" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-RY-AWi">
                                 <rect key="frame" x="83" y="106" width="266" height="26"/>
-                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.20568543174615384" green="0.20568543174615384" blue="0.20568543174615384" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="266" id="bIE-f6-iP4"/>
                                     <constraint firstAttribute="height" constant="26" id="dU9-Go-i4d"/>
@@ -569,9 +574,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Openbare Toiletten" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-2U-2Rm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Openbare Toiletten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-2U-2Rm">
                                 <rect key="frame" x="83" y="163" width="266" height="27"/>
-                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="Ojj-kG-NCY"/>
                                     <constraint firstAttribute="width" constant="266" id="Yba-X2-yOB"/>
@@ -580,9 +585,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musea etc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="tl9-Ei-wxL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musea etc." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="tl9-Ei-wxL">
                                 <rect key="frame" x="83" y="219" width="266" height="24"/>
-                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="G9L-CP-6we"/>
                                     <constraint firstAttribute="width" constant="266" id="Rsn-Od-CL1"/>
@@ -598,9 +603,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotels en Slaapplaatsen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-J1-O6b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotels en Slaapplaatsen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-J1-O6b">
                                 <rect key="frame" x="83" y="324" width="266" height="24"/>
-                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="2ZM-f0-VHH"/>
                                     <constraint firstAttribute="width" constant="266" id="XZk-6c-yJm"/>
@@ -609,9 +614,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tramhaltes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-uh-jT9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tramhaltes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-uh-jT9">
                                 <rect key="frame" x="85" y="431" width="265" height="24"/>
-                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="265" id="3fZ-Qi-MYk"/>
                                     <constraint firstAttribute="height" constant="24" id="3yb-gx-Z3w"/>
@@ -620,9 +625,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voorbehouden Parking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="E7a-UU-gDb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voorbehouden Parking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="E7a-UU-gDb">
                                 <rect key="frame" x="84" y="376" width="266" height="24"/>
-                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.2056854317" green="0.2056854317" blue="0.2056854317" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="CxD-Mz-MVS"/>
                                     <constraint firstAttribute="width" constant="266" id="rTe-f5-Djz"/>
@@ -641,8 +646,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPT-nf-uMv">
-                                <rect key="frame" x="12" y="493.5" width="91" height="36.5"/>
-                                <color key="backgroundColor" red="0.12941176469999999" green="0.1764705882" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="12" y="494" width="91" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="91" id="mwC-Ow-0f0"/>
                                 </constraints>

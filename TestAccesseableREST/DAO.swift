@@ -31,6 +31,8 @@ private init(){
     let parser = JSONParser()
     //parsen en laten opslaan binnen context: maak een parse 'tramhaltes' die de array gaat opvullen
     parser.parseTramhaltes(context: persistentContainer.viewContext)
+    parser.parseReca(context: persistentContainer.viewContext)
+    
 }
 
     

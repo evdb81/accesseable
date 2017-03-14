@@ -39,14 +39,53 @@ public class JSONParser{
                 volgendeTramHalte.stop_lat = Double.init(latStr)!
                 let lonStr = jsonObject.value(forKey: "stop_lon") as! String
                 volgendeTramHalte.stop_lon = Double.init(lonStr)!
+            }
+        }catch{
+            print("Tramhaltes konden niet weer gegeven worden.")
+        }
+        
+        //geen return nodig omdat je gegevens direct opslaat in je databank
+    }
+    
+    
+    func parseReca( context: NSManagedObjectContext)
+    {
+        //waar staan de gegevens
+        let url = URL(string:"http://web10.weopendata.com/measurements/reca")
+        //exceptions mogelijk bv. geen interent
+        do{
+            //data binnentrekken van url en in array opslaan
+            let jsonData = try Data(contentsOf: url!)
+            let jsonArray:NSArray = try JSONSerialization.jsonObject(with: jsonData) as! NSArray
+            
+            //alle items aflopen in de jsonArray (om gegevens uit database te halen)
+            for item in jsonArray{
+                
+                let jsonObject:NSDictionary = item as! NSDictionary
+                //entiteit aanmaken, context = verwijzing naar waar opgeslagen
+                let volgendeReca = Restaurant(context: context)
+                
+                //strings omzetten waar nodig
+                volgendeReca.id_westkans = jsonObject.value(forKey: "ID_WESTKANS") as! String
+                
+                volgendeReca.naam = jsonObject.value(forKey: "NAAM") as? String
+                
+                let latStr = jsonObject.value(forKey: "LAT") as! String
+                volgendeReca.lat = Double.init(latStr)!
+                let lonStr = jsonObject.value(forKey: "LON") as! String
+                volgendeReca.lon = Double.init(lonStr)!
+                
                 
                 //rest keys nog niet aangepast
             }
-        }catch{
-            print("Waerkt Ni")
+        }
+        catch{
+            print("foutieve informatie Re&Ca")
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
+    
+    
     
     
     func parseSanitair( context: NSManagedObjectContext)
@@ -66,7 +105,7 @@ public class JSONParser{
                 //entiteit aanmaken, context = verwijzing naar waar opgeslagen
                 let volgendeSanitair = Sanitair(context: context)
                 
-               
+                
                 //rest keys nog niet aangepast
             }
         }catch{
@@ -75,8 +114,8 @@ public class JSONParser{
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
     
-
-      func parseVPP (context: NSManagedObjectContext)
+    
+    func parseVPP (context: NSManagedObjectContext)
     {
         //waar staan de gegevens
         let url = URL(string:"http://web10.weopendata.com/measurements/vpp")
@@ -105,39 +144,7 @@ public class JSONParser{
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
     
-    func parseReca( context: NSManagedObjectContext)
-    {
-        //waar staan de gegevens
-        let url = URL(string:"http://web10.weopendata.com/measurements/reca")
-        //exceptions mogelijk bv. geen interent
-        do{
-            //data binnentrekken van url en in array opslaan
-            let jsonData = try Data(contentsOf: url!)
-            let jsonArray:NSArray = try JSONSerialization.jsonObject(with: jsonData) as! NSArray
-            
-            //alle items aflopen in de jsonArray (om gegevens uit database te halen)
-            for item in jsonArray{
-                
-                let jsonObject:NSDictionary = item as! NSDictionary
-                //entiteit aanmaken, context = verwijzing naar waar opgeslagen
-                let volgendeReca = Restaurant(context: context)
-                
-                //strings omzetten waar nodig
-                let idStr = jsonObject.value(forKey: "id_westkans") as! String
-                volgendeReca.id_westkans = Int32.init(idStr)!
-                
-                volgendeReca.naam = jsonObject.value(forKey: "naam") as? String
-                
-                //rest keys nog niet aangepast
-            }
-        }catch{
-            print("foutieve informatie Re&Ca")
-        }
-        //geen return nodig omdat je gegevens direct opslaat in je databank
-    }
     
-
-
     func parseInfokantoor( context: NSManagedObjectContext)
     {
         //waar staan de gegevens
@@ -154,7 +161,7 @@ public class JSONParser{
                 let jsonObject:NSDictionary = item as! NSDictionary
                 //entiteit aanmaken, context = verwijzing naar waar opgeslagen
                 let volgendeInfokantoor = Infokantoor(context: context)
-
+                
             }
         }catch{
             print("foutieve informatie infokantoren")
@@ -162,5 +169,5 @@ public class JSONParser{
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
     
-
+    
 }
