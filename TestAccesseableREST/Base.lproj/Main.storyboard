@@ -427,7 +427,7 @@
         <!--IN DE BUURT-->
         <scene sceneID="euo-T6-3D4">
             <objects>
-                <viewController title="IN DE BUURT" id="pSV-qe-6ui" customClass="BuurtViewController" customModule="TestAccesseableREST" sceneMemberID="viewController">
+                <viewController title="IN DE BUURT" id="pSV-qe-6ui" customClass="BuurtViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="182-dj-Sfk"/>
                         <viewControllerLayoutGuide type="bottom" id="AIb-OG-e90"/>

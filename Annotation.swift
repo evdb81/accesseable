@@ -27,12 +27,14 @@ public class MyAnnotation:NSObject, MKAnnotation
     init(log:Logement)
     {
         self.coordinate = CLLocationCoordinate2DMake(log.lat, log.lon)
+        self.title = log.naam
     }
     
     
     init(poi:POI)
     {
         self.coordinate = CLLocationCoordinate2DMake(poi.lat, poi.lon)
+        self.title = poi.naam
     }
     
     
@@ -40,27 +42,26 @@ public class MyAnnotation:NSObject, MKAnnotation
     {
         self.coordinate = CLLocationCoordinate2DMake(reca.lat, reca.lon)
         self.title = reca.naam
-        self.logo = "Restaurant"
     }
  
     
     init(san:Sanitair)
     {
         self.coordinate = CLLocationCoordinate2DMake(san.lat, san.lon)
-        self.logo = ""
+        self.title = "sanitair"
     }
     
     
     init(halte:Tramhalte) {
         self.coordinate = CLLocationCoordinate2DMake(halte.stop_lat, halte.stop_lon)
-        self.logo = "tram"
+        self.title = halte.stop_name
     }
 
     
     init(vpp:VPP)
     {
         self.coordinate = CLLocationCoordinate2DMake(vpp.lat, vpp.lon)
-        self.logo = "parking"
+        self.title = "parkeerplaats"
     }
    
     
