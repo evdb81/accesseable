@@ -139,7 +139,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="pSV-qe-6ui" kind="show" identifier="segue_inDeBuurt" id="5z3-9o-GYy"/>
+                                    <segue destination="wst-ro-jmq" kind="show" id="1jH-4N-ShH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug9-Gx-not">
@@ -348,7 +348,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ik heb minimaal         cm  vrije breedte nodig om te passeren." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NGo-sk-0yU">
                                 <rect key="frame" x="13" y="200" width="240" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.4823529411764706" green="0.73725490196078436" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -362,7 +362,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ik heb minimaal           cm nodig om met de rolstoelte draaien (draaicirkel)." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zMq-rh-GZe">
                                 <rect key="frame" x="13" y="302" width="240" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.4823529411764706" green="0.73725490196078436" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -376,7 +376,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ik kan een drempel nemen van maximaal             cm." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="H9D-co-Dmf">
                                 <rect key="frame" x="16" y="411" width="240" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.4823529411764706" green="0.73725490196078436" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -440,9 +440,11 @@
                         <outlet property="lblDrempel" destination="zbi-7h-Ns2" id="O91-jh-7nM"/>
                         <outlet property="lblLengte" destination="KMY-Jq-Jwy" id="61U-eR-mUt"/>
                         <outlet property="lblRolstoel" destination="azu-UI-Jfc" id="oVC-nS-Dcd"/>
+                        <outlet property="naam" destination="Vq9-Qe-oWF" id="Xq3-vx-nGX"/>
                         <outlet property="slider" destination="fM0-UB-nlX" id="CtH-ER-yoi"/>
                         <outlet property="sliderDrempel" destination="9FQ-ce-8Ma" id="tbQ-P5-fJV"/>
                         <outlet property="sliderRol" destination="kWM-BL-hBd" id="UYF-zM-azs"/>
+                        <outlet property="switchHelling" destination="EUh-uL-tXi" id="QQg-Rn-ADv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epD-WS-gD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -466,7 +468,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="6Fa-7t-p76" detailTextLabel="ye0-va-e88" style="IBUITableViewCellStyleValue1" id="dNG-m1-Kl1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="6Fa-7t-p76" detailTextLabel="ye0-va-e88" style="IBUITableViewCellStyleValue1" id="dNG-m1-Kl1">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dNG-m1-Kl1" id="Ukt-H7-r79">
@@ -491,6 +493,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Sqh-IN-KYn" id="dwX-Ev-Jbb"/>
+                                    <outlet property="delegate" destination="Sqh-IN-KYn" id="SnZ-wQ-fTH"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -673,9 +679,6 @@
                                 <state key="normal" title="Categorieën">
                                     <color key="titleColor" red="0.12941176470588237" green="0.17647058823529413" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="wst-ro-jmq" kind="show" identifier="segue_categorieMap" id="HPe-GO-oG5"/>
-                                </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJA-Z5-3Og">
                                 <rect key="frame" x="0.0" y="107" width="375" height="540"/>
@@ -829,7 +832,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="zoekOpCategorie:" destination="wst-ro-jmq" eventType="touchUpInside" id="TRQ-Al-2GN"/>
-                                    <segue destination="pSV-qe-6ui" kind="show" id="edE-gC-gue"/>
+                                    <segue destination="pSV-qe-6ui" kind="show" id="bgF-8X-54v"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zlb-NN-ixO">
@@ -965,7 +968,4 @@
         <image name="search.png" width="600" height="596"/>
         <image name="settings-512 copy.png" width="512" height="512"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="5z3-9o-GYy"/>
-    </inferredMetricsTieBreakers>
 </document>
