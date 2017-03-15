@@ -23,6 +23,8 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
     let Haltes = DAO.sharedDAO.getAllTramHaltes()
     let VPP = DAO.sharedDAO.getAllVPP()
     
+    var items:[String:Bool] = ["Reca":true, "Toilet":true, "Museum":true, "Info":true, "Hotel":true, "Parking":true, "Halte": true,"Helling":true]
+    
     //elke keer scherm eerste keer wordt geladen
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,39 +42,54 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
     //pins vd locaties op map toevoegen
     func createAnnotations(){
         
+        if (items["Info"])!{
         for info in Info{
             let annotation1:MyAnnotation = MyAnnotation.init(info: info)
             mapview.addAnnotation(annotation1)
+            }
         }
         
+        if (items["Hotel"])!{
         for log in Loge{
             let annotation2:MyAnnotation = MyAnnotation.init(log: log)
             mapview.addAnnotation(annotation2)
+            }
         }
         
+        if (items["Hotel"])!{
         for poi in POI{
             let annotation3:MyAnnotation = MyAnnotation.init(poi: poi)
             mapview.addAnnotation(annotation3)
+            }
         }
 
-        for reca in ReCa{
-            let annotation4:MyAnnotation = MyAnnotation.init(reca: reca)
-            mapview.addAnnotation(annotation4)
+        if (items["Reca"])!
+        {
+            for reca in ReCa{
+                let annotation4:MyAnnotation = MyAnnotation.init(reca: reca)
+                mapview.addAnnotation(annotation4)
+            }
         }
         
-        for san in Sanitair{
-            let annotation5:MyAnnotation = MyAnnotation.init(san: san)
-            mapview.addAnnotation(annotation5)
+        if (items["Toilet"])!
+        {
+            for san in Sanitair{
+                let annotation5:MyAnnotation = MyAnnotation.init(san: san)
+                mapview.addAnnotation(annotation5)
+            }
         }
 
+        if (items["Halte"])!{
         for halte in Haltes{
             let annotation6:MyAnnotation = MyAnnotation.init(halte: halte)
             mapview.addAnnotation(annotation6)
+            }
         }
-    
+        if (items["Parking"])!{
         for vpp in VPP{
             let annotation7:MyAnnotation = MyAnnotation.init(vpp: vpp)
             mapview.addAnnotation(annotation7)
+            }
         }
     }
 

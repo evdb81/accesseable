@@ -23,6 +23,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
 
@@ -49,9 +50,9 @@ class ProfileViewController: UIViewController {
         //nieuw leeg item om op te slaan
         let toDoItem:NSManagedObject = NSEntityDescription.insertNewObject(forEntityName: "Profile", into: context)
         //leeg item opvullen met waarden uit scherm
-        toDoItem.setValue(tfTitle.text , forKey:"title")
-        toDoItem.setValue(tvDescription.text, forKey:"details" )
-        toDoItem.setValue(dpDueDate.date, forKey:"date")
+        //toDoItem.setValue(tfTitle.text , forKey:"title")
+        //toDoItem.setValue(tvDescription.text, forKey:"details" )
+        //toDoItem.setValue(dpDueDate.date, forKey:"date")
         
         //context saven, zo zijn aanpassingen toegevoegd aan database
         do {
@@ -65,6 +66,6 @@ class ProfileViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
         
     }
-    }
+    
 
 }
