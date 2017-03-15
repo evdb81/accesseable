@@ -218,6 +218,8 @@ public class JSONParser{
                 let idStr = jsonObject.value(forKey: "ID_WESTKANS") as! String
                 volgendeInfokantoor.id_westkans = String.init(idStr)!
                 
+                let idNaam = jsonObject.value(forKey: "NAAM") as! String
+                volgendeInfokantoor.naam = String.init(idNaam)
                 
                 let latStr = jsonObject.value(forKey: "LAT") as! String
                 volgendeInfokantoor.lat = Double.init(latStr)!
@@ -273,6 +275,39 @@ public class JSONParser{
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
     
+    //HELLINGEN
+    
+    func parseHellingen( context: NSManagedObjectContext)
+    {
+        //waar staan de gegevens
+        let url = URL(string:"http://web10.weopendata.com/measurements/dijk")
+        //exceptions mogelijk bv. geen interent
+        do{
+            //data binnentrekken van url en in array opslaan
+            let jsonData = try Data(contentsOf: url!)
+            let jsonArray:NSArray = try JSONSerialization.jsonObject(with: jsonData) as! NSArray
+            
+            //alle items aflopen in de jsonArray (om gegevens uit database te halen)
+            for item in jsonArray{
+                
+                let jsonObject:NSDictionary = item as! NSDictionary
+                //entiteit aanmaken, context = verwijzing naar waar opgeslagen
+                let volgendeHelling = Helling(context: context)
+                
+                //strings omzetten waar nodig
+                let idStr = jsonObject.value(forKey: "ID_WESTKANS") as! String
+                volgendeHelling.id_westkans = String.init(idStr)!
+                let latStr = jsonObject.value(forKey: "LAT") as! String
+                volgendeHelling.lat = Double.init(latStr)!
+                let lonStr = jsonObject.value(forKey: "LON") as! String
+                volgendeHelling.lon = Double.init(lonStr)!
+            }
+        }catch{
+            print("Hellingen konden niet weergegeven worden.")
+        }
+        
+        //geen return nodig omdat je gegevens direct opslaat in je databank
+    }
 
     
     

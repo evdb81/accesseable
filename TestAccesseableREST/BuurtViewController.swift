@@ -22,6 +22,7 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
     let Sanitair = DAO.sharedDAO.getAllSanitair()
     let Haltes = DAO.sharedDAO.getAllTramHaltes()
     let VPP = DAO.sharedDAO.getAllVPP()
+    let Helling = DAO.sharedDAO.getAllHellingen()
     
     var items:[String:Bool] = ["Reca":true, "Toilet":true, "Museum":true, "Info":true, "Hotel":true, "Parking":true, "Halte": true,"Helling":true]
     
@@ -56,7 +57,7 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
             }
         }
         
-        if (items["Hotel"])!{
+        if (items["Museum"])!{
         for poi in POI{
             let annotation3:MyAnnotation = MyAnnotation.init(poi: poi)
             mapview.addAnnotation(annotation3)
@@ -91,6 +92,14 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
             mapview.addAnnotation(annotation7)
             }
         }
+        
+        if (items["Helling"])!{
+            for helling in Helling{
+                let annotation8:MyAnnotation = MyAnnotation.init(helling: helling)
+                mapview.addAnnotation(annotation8)
+            }
+        }
+
     }
 
     

@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Helling" representedClassName="Helling" syncable="YES" codeGenerationType="class">
+        <attribute name="adres_locatie" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gemeente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="helling_breedte" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="helling_draaicirkel_beneden_ondergrond" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="helling_hoogteverschil" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="helling_lengte" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="helling_ondergrond" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="helling_pct" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_westkans" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="naam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toeganspad_ondergrond" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_picture_main" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="Infokantoor" representedClassName="Infokantoor" syncable="YES" codeGenerationType="class">
         <attribute name="adres_bus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="adres_nr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -382,10 +402,11 @@
         <element name="Infokantoor" positionX="0" positionY="99" width="128" height="1515"/>
         <element name="Logement" positionX="18" positionY="108" width="128" height="450"/>
         <element name="POI" positionX="-18" positionY="90" width="128" height="1845"/>
+        <element name="Profile" positionX="-18" positionY="135" width="128" height="120"/>
         <element name="Restaurant" positionX="-36" positionY="81" width="128" height="555"/>
         <element name="Sanitair" positionX="-63" positionY="63" width="128" height="690"/>
         <element name="Tramhalte" positionX="-63" positionY="-18" width="128" height="210"/>
         <element name="VPP" positionX="-54" positionY="72" width="128" height="405"/>
-        <element name="Profile" positionX="-18" positionY="135" width="128" height="120"/>
+        <element name="Helling" positionX="-18" positionY="135" width="128" height="315"/>
     </elements>
 </model>

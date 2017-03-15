@@ -65,7 +65,10 @@ public class MyAnnotation:NSObject, MKAnnotation
         self.pinColor = UIColor.cyan
     }
    
-    
+    init(helling:Helling) {
+        self.coordinate = CLLocationCoordinate2DMake(helling.lat, helling.lon)
+        self.pinColor = UIColor.white
+    }
     
     
 }
