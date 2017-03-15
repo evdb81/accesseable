@@ -68,7 +68,7 @@ public class JSONParser{
                 let volgendeReca = Restaurant(context: context)
                 
                 //strings omzetten waar nodig
-                volgendeReca.id_westkans = jsonObject.value(forKey: "ID_WESTKANS") as? String
+                //volgendeReca.id_westkans = jsonObject.value(forKey: "ID_WESTKANS") as? String
                 
                 volgendeReca.naam = jsonObject.value(forKey: "NAAM") as? String
                 
@@ -178,8 +178,8 @@ public class JSONParser{
                 let volgendeVpp = VPP(context: context)
                 
                 //strings omzetten waar nodig
-                let idStr = jsonObject.value(forKey: "ID_WESTKANS") as! String
-                volgendeVpp.id_westkans = String.init(idStr)!
+                //let idStr = jsonObject.value(forKey: "ID_WESTKANS") as! String
+                //volgendeVpp.id_westkans = String.init(idStr)!
                 
                 
                 let latStr = jsonObject.value(forKey: "LAT") as! String

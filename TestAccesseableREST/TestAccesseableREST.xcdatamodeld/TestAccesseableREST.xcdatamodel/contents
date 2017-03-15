@@ -251,6 +251,13 @@
         <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="Profile" representedClassName="Profile" syncable="YES" codeGenerationType="class">
+        <attribute name="breedte" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="draaicirkel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="drempel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="helling" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="naam" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Restaurant" representedClassName="Restaurant" syncable="YES" codeGenerationType="class">
         <attribute name="adres_bus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="adres_nummer" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -379,5 +386,6 @@
         <element name="Sanitair" positionX="-63" positionY="63" width="128" height="690"/>
         <element name="Tramhalte" positionX="-63" positionY="-18" width="128" height="210"/>
         <element name="VPP" positionX="-54" positionY="72" width="128" height="405"/>
+        <element name="Profile" positionX="-18" positionY="135" width="128" height="120"/>
     </elements>
 </model>
