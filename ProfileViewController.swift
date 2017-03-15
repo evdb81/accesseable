@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ProfileViewController: UIViewController {
     
@@ -39,5 +40,31 @@ class ProfileViewController: UIViewController {
     }
 
  
+    @IBAction func saveProfile(_ sender: UIButton) {
+        
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        //nieuw leeg item om op te slaan
+        let toDoItem:NSManagedObject = NSEntityDescription.insertNewObject(forEntityName: "Profile", into: context)
+        //leeg item opvullen met waarden uit scherm
+        toDoItem.setValue(tfTitle.text , forKey:"title")
+        toDoItem.setValue(tvDescription.text, forKey:"details" )
+        toDoItem.setValue(dpDueDate.date, forKey:"date")
+        
+        //context saven, zo zijn aanpassingen toegevoegd aan database
+        do {
+            try context.save()
+        } catch  {
+            print("opslaan gefaald")
+        }
+        
+        //modal scherm weer wegdoen
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    }
 
 }
