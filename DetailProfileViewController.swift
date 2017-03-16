@@ -22,8 +22,7 @@ class DetailProfileViewController: UIViewController, UITableViewDelegate, UITabl
 
         // Do any additional setup after loading the view.
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        context = appDelegate.persistentContainer.viewContext
+        context = DAO.sharedDAO.persistentContainer.viewContext
         fillTableView()
     }
     
@@ -52,7 +51,7 @@ class DetailProfileViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -67,7 +66,7 @@ class DetailProfileViewController: UIViewController, UITableViewDelegate, UITabl
         let profile = pofileList[indexPath.row]
         //waarden uit object halen
         let naam = profile.value(forKey: "naam")
-        let breedte = profile.value(forKey: "breedte")
+        let breedte = profile.value(forKey:"breedte")
         let draaicirkel = profile.value(forKey: "draaicirkel")
         let drempel = profile.value(forKey: "drempel")
         let helling = profile.value(forKey: "helling")
@@ -75,7 +74,7 @@ class DetailProfileViewController: UIViewController, UITableViewDelegate, UITabl
         
         //cell opvullen
         cell?.textLabel?.text = naam as? String
-        cell?.detailTextLabel?.text = breedte as! String?
+        //cell?.detailTextLabel?.text = "\(breedte)" as String?
         
         return cell!
         
