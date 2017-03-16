@@ -15,6 +15,8 @@
 		4916C9F31E782C7D0017A047 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916C9F21E782C7D0017A047 /* ProfileViewController.swift */; };
 		4916C9F51E79353C0017A047 /* DetailProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916C9F41E79353C0017A047 /* DetailProfileViewController.swift */; };
 		4916C9F71E794E0B0017A047 /* accesseable_download_230.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4916C9F61E794E0B0017A047 /* accesseable_download_230.jpg */; };
+		4916C9FE1E7AD9D40017A047 /* koepellogo_groot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4916C9FC1E7AD9D40017A047 /* koepellogo_groot.jpg */; };
+		4916C9FF1E7AD9D40017A047 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4916C9FD1E7AD9D40017A047 /* logo.png */; };
 		791DA6491E72A3DC0070CB0D /* BuurtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DA6451E72A3DC0070CB0D /* BuurtViewController.swift */; };
 		791DA64A1E72A3DC0070CB0D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DA6461E72A3DC0070CB0D /* InfoViewController.swift */; };
 		791DA64B1E72A3DC0070CB0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DA6471E72A3DC0070CB0D /* ViewController.swift */; };
@@ -108,6 +110,8 @@
 		4916C9F21E782C7D0017A047 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4916C9F41E79353C0017A047 /* DetailProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProfileViewController.swift; sourceTree = "<group>"; };
 		4916C9F61E794E0B0017A047 /* accesseable_download_230.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accesseable_download_230.jpg; sourceTree = "<group>"; };
+		4916C9FC1E7AD9D40017A047 /* koepellogo_groot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = koepellogo_groot.jpg; sourceTree = "<group>"; };
+		4916C9FD1E7AD9D40017A047 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		791DA6451E72A3DC0070CB0D /* BuurtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuurtViewController.swift; path = TestAccesseableREST/BuurtViewController.swift; sourceTree = "<group>"; };
 		791DA6461E72A3DC0070CB0D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = TestAccesseableREST/InfoViewController.swift; sourceTree = "<group>"; };
 		791DA6471E72A3DC0070CB0D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = TestAccesseableREST/ViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +245,8 @@
 		79CC2FF51E71869600151B6D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4916C9FC1E7AD9D40017A047 /* koepellogo_groot.jpg */,
+				4916C9FD1E7AD9D40017A047 /* logo.png */,
 				4916C9F61E794E0B0017A047 /* accesseable_download_230.jpg */,
 				4916C9F01E7820190017A047 /* boss_man-512.png */,
 				791DA64D1E72A3F40070CB0D /* about.png */,
@@ -411,6 +417,7 @@
 				791DA6A81E72A3F50070CB0D /* m1.png in Resources */,
 				791DA6A01E72A3F50070CB0D /* helling.png in Resources */,
 				791DA6B61E72A3F50070CB0D /* profielTop.png in Resources */,
+				4916C9FF1E7AD9D40017A047 /* logo.png in Resources */,
 				791DA6A51E72A3F50070CB0D /* label_a_neutraal.jpg in Resources */,
 				4916C9F71E794E0B0017A047 /* accesseable_download_230.jpg in Resources */,
 				791DA6A11E72A3F50070CB0D /* home.png in Resources */,
@@ -444,6 +451,7 @@
 				791DA69D1E72A3F50070CB0D /* Erasmus.png in Resources */,
 				7925B9F41E7817D0000202FF /* settings-512 copy.png in Resources */,
 				79CC2FC61E7147E700151B6D /* Assets.xcassets in Resources */,
+				4916C9FE1E7AD9D40017A047 /* koepellogo_groot.jpg in Resources */,
 				791DA6B31E72A3F50070CB0D /* plus_inv.png in Resources */,
 				791DA6A31E72A3F50070CB0D /* Info.png in Resources */,
 				791DA6931E72A3F50070CB0D /* Apptile.png in Resources */,
