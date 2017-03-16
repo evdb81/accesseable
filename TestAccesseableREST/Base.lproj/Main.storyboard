@@ -512,7 +512,7 @@
         <!--MIJN LOCATIES-->
         <scene sceneID="ch5-IT-afD">
             <objects>
-                <viewController title="MIJN LOCATIES" id="iTw-c7-3gH" sceneMemberID="viewController">
+                <viewController title="MIJN LOCATIES" id="iTw-c7-3gH" customClass="MijnLocatiesViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lxa-wm-2fA"/>
                         <viewControllerLayoutGuide type="bottom" id="LhK-Ik-Y0Q"/>
@@ -622,7 +622,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbI-Zn-ndp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2297" y="-43"/>
+            <point key="canvasLocation" x="2111" y="-102"/>
         </scene>
         <!--INFO-->
         <scene sceneID="80n-Ux-ecN">
@@ -719,6 +719,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIF-4Q-z5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2186" y="-943"/>
+        </scene>
+        <!--Detail Location View Controller-->
+        <scene sceneID="18s-hW-BSf">
+            <objects>
+                <viewController id="2Tg-fK-1zA" customClass="DetailLocationViewController" customModule="TestAccesseableREST" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Fc-IX-JI0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iix-pp-N2y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yju-J8-pTf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQQ-p8-Eej" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2881" y="-668"/>
         </scene>
         <!--CATEGORIEËN-->
         <scene sceneID="flC-ib-3Rn">
@@ -985,6 +1003,6 @@
         <image name="settings-512 copy.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p1m-UA-0PJ"/>
+        <segue reference="yAS-cD-OLq"/>
     </inferredMetricsTieBreakers>
 </document>
