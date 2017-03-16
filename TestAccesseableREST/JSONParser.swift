@@ -151,6 +151,9 @@ public class JSONParser{
                 volgendePoi.lat = Double.init(latStr)!
                 let lonStr = jsonObject.value(forKey: "LON") as! String
                 volgendePoi.lon = Double.init(lonStr)!
+                
+                volgendePoi.mail = jsonObject.value(forKey: "MAIL") as? String
+                
             }
         }catch{
             print("Musea konden niet weer gegeven worden.")

@@ -25,11 +25,17 @@ class DetailLocationViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        print("\(object?.description)")
+        
         if(object is POI)
         {
             //scherm opbouwen voor POI
             lblNaam.text = object?.value(forKey: "naam") as! String?
-            lblCategorie.text = object?.entity as! String?
+            
+            
+            lblCategorie.text = object?.value(forKey: "subtype") as! String?
+            
+            
             lblAdres.text = object?.value(forKey: "adres_straat") as! String?
             //lblTel.text = object?.value(forKey: "tel") as! String?
             lblSite.text = object?.value(forKey: "web") as! String?
