@@ -14,8 +14,11 @@ class DetailLocationViewController: UIViewController {
     var object:NSManagedObject?
     
     @IBOutlet weak var lblNaam: UILabel!
-    
-    
+    @IBOutlet weak var lblCategorie: UILabel!
+    @IBOutlet weak var lblAdres: UILabel!
+    @IBOutlet weak var lblTel: UILabel!
+    @IBOutlet weak var lblSite: UILabel!
+    @IBOutlet weak var lblMail: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,11 @@ class DetailLocationViewController: UIViewController {
         {
             //scherm opbouwen voor POI
             lblNaam.text = object?.value(forKey: "naam") as! String?
+            lblCategorie.text = object?.entity as! String?
+            lblAdres.text = object?.value(forKey: "adres_straat") as! String?
+            //lblTel.text = object?.value(forKey: "tel") as! String?
+            lblSite.text = object?.value(forKey: "web") as! String?
+            lblMail.text = object?.value(forKey: "mail") as! String?
            
         }
         else if (object is Tramhalte)
