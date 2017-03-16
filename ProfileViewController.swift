@@ -49,11 +49,11 @@ class ProfileViewController: UIViewController {
         //nieuw leeg item om op te slaan
         let profile:NSManagedObject = NSEntityDescription.insertNewObject(forEntityName: "Profile", into: context)
         //leeg item opvullen met waarden uit scherm
-        //strings omzetten naar cijfers
+        //cijfersomzetten naar string
         profile.setValue(naam.text , forKey:"naam")
-        profile.setValue(lblLengte.text, forKey:"breedte" )
-        profile.setValue(lblRolstoel.text, forKey:"draaicirkel")
-        profile.setValue(lblDrempel.text, forKey:"drempel")
+        profile.setValue(Double.init(lblLengte.text!) , forKey:"breedte" )
+        profile.setValue(Double.init(lblRolstoel.text!) , forKey:"draaicirkel" )
+        profile.setValue(Double.init(lblDrempel.text!), forKey:"drempel" )
         
         
         //save
