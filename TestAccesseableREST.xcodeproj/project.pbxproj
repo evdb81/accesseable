@@ -96,7 +96,7 @@
 		79CC2FC91E7147E700151B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79CC2FC71E7147E700151B6D /* LaunchScreen.storyboard */; };
 		79CC2FD11E714DB900151B6D /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CC2FD01E714DB900151B6D /* DAO.swift */; };
 		79CC2FD31E71504900151B6D /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CC2FD21E71504900151B6D /* JSONParser.swift */; };
-		79E469401E769974004B2FA9 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E4693F1E769974004B2FA9 /* Annotation.swift */; };
+		79E469401E769974004B2FA9 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E4693F1E769974004B2FA9 /* MyAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -191,7 +191,7 @@
 		79CC2FCA1E7147E700151B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79CC2FD01E714DB900151B6D /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAO.swift; path = TestAccesseableREST/DAO.swift; sourceTree = "<group>"; };
 		79CC2FD21E71504900151B6D /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = TestAccesseableREST/JSONParser.swift; sourceTree = "<group>"; };
-		79E4693F1E769974004B2FA9 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		79E4693F1E769974004B2FA9 /* MyAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,7 +333,7 @@
 			children = (
 				79CC2FD01E714DB900151B6D /* DAO.swift */,
 				79CC2FD21E71504900151B6D /* JSONParser.swift */,
-				79E4693F1E769974004B2FA9 /* Annotation.swift */,
+				79E4693F1E769974004B2FA9 /* MyAnnotation.swift */,
 				7925B9EF1E77FCF6000202FF /* Recent.swift */,
 				7925B9E91E77FA6D000202FF /* Favorieten.swift */,
 			);
@@ -485,7 +485,7 @@
 			files = (
 				79CC2FD11E714DB900151B6D /* DAO.swift in Sources */,
 				79CC2FD31E71504900151B6D /* JSONParser.swift in Sources */,
-				79E469401E769974004B2FA9 /* Annotation.swift in Sources */,
+				79E469401E769974004B2FA9 /* MyAnnotation.swift in Sources */,
 				7925B9EA1E77FA6D000202FF /* Favorieten.swift in Sources */,
 				4916C9F31E782C7D0017A047 /* ProfileViewController.swift in Sources */,
 				79A923EC1E72BEDF0079B993 /* BuurtCategorieënViewController.swift in Sources */,

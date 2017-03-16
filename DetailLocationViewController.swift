@@ -7,13 +7,32 @@
 //
 
 import UIKit
+import CoreData
 
 class DetailLocationViewController: UIViewController {
 
+    var object:NSManagedObject?
+    
+    @IBOutlet weak var lblNaam: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if(object is POI)
+        {
+            //scherm opbouwen voor POI
+            lblNaam.text = object?.value(forKey: "naam") as! String?
+           
+        }
+        else if (object is Tramhalte)
+        {
+            lblNaam.text = object?.value(forKey: "stop_name") as! String?
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

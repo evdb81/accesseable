@@ -107,6 +107,8 @@ public class JSONParser{
                 //strings omzetten waar nodig
                 volgendeSanitair.id_westkans = jsonObject.value(forKey: "ID_WESTKANS") as? String
                 
+                volgendeSanitair.naam = jsonObject.value(forKey: "NAAM") as? String
+                
                 let latStr = jsonObject.value(forKey: "LAT") as! String
                 volgendeSanitair.lat = Double.init(latStr)!
                 let lonStr = jsonObject.value(forKey: "LON") as! String

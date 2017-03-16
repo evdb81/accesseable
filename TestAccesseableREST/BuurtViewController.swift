@@ -127,6 +127,9 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
                 pinView = MKPinAnnotationView.init(annotation: pin, reuseIdentifier: identifier)
                 //instellen pin
                 pinView.canShowCallout = true
+                
+                let button = UIButton.init(type: .infoDark)
+                pinView.rightCalloutAccessoryView = button
             }
             
             //klaar met annotatie, op kaart zetten
@@ -136,7 +139,18 @@ class BuurtViewController: UIViewController, MKMapViewDelegate {
         //geen van onze annotaties, niet weergeven
         return nil
     }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+//segue aanmaken naar het detailLocatieScherm
+        let pin = view.annotation as! MyAnnotation
+        performSegue(withIdentifier: "kaartNaarDetail", sender: pin.object)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //let view = sender as! MKPinAnnotationView
+        let detailScherm = segue.destination as! DetailLocationViewController
+        detailScherm.object = sender as! NSManagedObject?
+    }
     
     func checkLocationAuthorization(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
             
