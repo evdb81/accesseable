@@ -45,15 +45,15 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
         items.removeAll()
         
        //zoeken binnen items -> getAll... -> text die overeenkomt
+
         items.append(contentsOf: DAO.sharedDAO.getAllTramHaltesSearchBar(naam: searchText))
-      
-  
+        
         items.append(contentsOf: DAO.sharedDAO.getAllInfopuntenSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllReCaSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllSanitairSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllLogementenSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllPoiSearchBar(naam:searchText))
-      
+        
         //VPP VERWIJDERD
         
         tvZoekResultaten.reloadData()
@@ -64,21 +64,37 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
-        cell?.textLabel?.text = items[indexPath.row].value(forKey: "stop_name") as? String
-   
-        cell?.textLabel?.text = items[indexPath.row].value(forKey: "naam") as? String
-        cell?.textLabel?.text = items[indexPath.row].value(forKey: "adres_straat") as? String
-        cell?.textLabel?.text = items[indexPath.row].value(forKey: "tel") as? String
-        cell?.textLabel?.text = items[indexPath.row].value(forKey: "gemeente") as? String
- 
-        
+        if (items[indexPath.row] is Tramhalte)
+        {
+            cell?.textLabel?.text = items[indexPath.row].value(forKey: "stop_name") as? String
+            cell?.detailTextLabel?.text = " "
+        }else if (items[indexPath.row] is Infokantoor){
+            cell?.textLabel?.text = items[indexPath.row].value(forKey: "naam") as? String
+            cell?.detailTextLabel?.text = items[indexPath.row].value(forKey: "adres_straat") as? String
+            
+        }else if (items[indexPath.row] is Restaurant){
+            cell?.textLabel?.text = items[indexPath.row].value(forKey: "naam") as? String
+            cell?.detailTextLabel?.text = items[indexPath.row].value(forKey: "adres_straat") as? String
+            
+        }else if (items[indexPath.row] is Sanitair){
+            cell?.textLabel?.text = items[indexPath.row].value(forKey: "naam") as? String
+            cell?.detailTextLabel?.text = items[indexPath.row].value(forKey: "adres_straat") as? String
+            
+        }else if (items[indexPath.row] is Logement){
+            cell?.textLabel?.text = items[indexPath.row].value(forKey: "naam") as? String
+            cell?.detailTextLabel?.text = items[indexPath.row].value(forKey: "adres_straat") as? String
+            
+        }else if (items[indexPath.row] is POI){
+            cell?.textLabel?.text = items[indexPath.row].value(forKey: "naam") as? String
+            cell?.detailTextLabel?.text = items[indexPath.row].value(forKey: "adres_straat") as? String
+
+        }
         return cell!
     }
     
+        
     @IBAction func clearKeyboard(_ sender: Any) {
         zoekbalk.resignFirstResponder()
-        
     }
-    
-    
+
 }
