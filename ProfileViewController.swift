@@ -20,6 +20,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var sliderDrempel: UISlider!
     @IBOutlet weak var naam: UITextField!
     @IBOutlet weak var switchHelling: UISwitch!
+    @IBOutlet weak var sliderToilet1: UISlider!
+    @IBOutlet weak var sliderToilet2: UISlider!
+    @IBOutlet weak var lblToilet1: UILabel!
+    @IBOutlet weak var lblToilet2: UILabel!
     
 
     override func viewDidLoad() {
@@ -35,12 +39,18 @@ class ProfileViewController: UIViewController {
     }
     
     
-    @IBAction func sliderSlided() {
+  
+    
+    @IBAction func sliderSlided2(_ sender: UISlider) {
         
         lblLengte.text = "\(slider.value)"
-        lblDrempel.text = "\(sliderDrempel.value)"
         lblRolstoel.text = "\(sliderRol.value)"
+        lblDrempel.text = "\(sliderDrempel.value)"
+        lblToilet2.text = "\(sliderToilet2.value)"
+        lblToilet1.text = "\(sliderToilet1.value)"
+        
     }
+    
 
  
     @IBAction func saveProfile(_ sender: UIButton) {
@@ -50,6 +60,7 @@ class ProfileViewController: UIViewController {
         //nieuw leeg item om op te slaan
         let profile:NSManagedObject = NSEntityDescription.insertNewObject(forEntityName: "Profile", into: context)
         //leeg item opvullen met waarden uit scherm
+        profile.setValue(naam.text, forKey: "naam")
         //toDoItem.setValue(tfTitle.text , forKey:"title")
         //toDoItem.setValue(tvDescription.text, forKey:"details" )
         //toDoItem.setValue(dpDueDate.date, forKey:"date")
