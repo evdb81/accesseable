@@ -1191,12 +1191,13 @@ Hoekstra Jelle                                                              VAND
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-xY-Iwf">
-                                <rect key="frame" x="175" y="67" width="73" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="6YU-Dl-PYm"/>
-                                    <constraint firstAttribute="height" constant="76" id="SQB-wM-Ox8"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Qs-7r-Y1n">
+                                <rect key="frame" x="16" y="151" width="343" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-xY-Iwf">
+                                <rect key="frame" x="295" y="75" width="45" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.48627450979999998" green="0.75686274509999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1214,6 +1215,8 @@ Hoekstra Jelle                                                              VAND
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ivLogo" destination="Sel-xY-Iwf" id="pcL-X9-Wf8"/>
+                        <outlet property="ivMainPicture" destination="5Qs-7r-Y1n" id="iu3-Dk-ecV"/>
                         <outlet property="lblAdresBus" destination="1PR-iE-Asw" id="URj-aA-tLV"/>
                         <outlet property="lblAdresNr" destination="0sj-yt-yVE" id="72j-MU-fYy"/>
                         <outlet property="lblAdresStraat" destination="7Ju-k4-hpk" id="zbU-Gb-JbQ"/>
