@@ -16,6 +16,7 @@ public class DAO{
     //persistentcontainer bevat info waar je exact aan het werken bent, waar je gegevens opslaat, en hoe je entiteiten omschreven zijn waarin/waarmee je aan het werken bent
     var persistentContainer: NSPersistentContainer = {
         
+        
         let container = NSPersistentContainer(name: "TestAccesseableREST")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
@@ -127,6 +128,7 @@ public class DAO{
         return []
     }
     
+    /*
     //Parkeerplaatsen
     func getAllVPP() -> [VPP]
     {
@@ -140,6 +142,8 @@ public class DAO{
         }
         return []
     }
+    */
+    
     
     //Hellingen
     

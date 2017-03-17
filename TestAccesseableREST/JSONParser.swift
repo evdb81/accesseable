@@ -78,19 +78,18 @@ public class JSONParser{
                 volgendeReca.adres_straat = jsonObject.value(forKey: "ADRES_STRAAT") as? String
                 
                 //volgendeReca.adres_nr = jsonObject.value(forKey: "ADRES_NR") as? String
-                let adresBusStr = jsonObject.value(forKey: "ADRES_BUS") as? String!
-                if(adresBusStr != "")
-                {
-                    volgendeReca.adres_bus = Int16.init(adresBusStr!)!
-                }
-                
+                volgendeReca.adres_bus = jsonObject.value(forKey: "ADRES_BUS") as? String!
+             
                 //volgendeReca.adres_bus = (jsonObject.value(forKey: "ADRES_BUS") as? Int16)!
                 
-                volgendeReca.pnr = Int16.init((jsonObject.value(forKey: "PNR")  as? String)!)!
+                volgendeReca.pnr = jsonObject.value(forKey: "PNR")  as? String
                 volgendeReca.gemeente = jsonObject.value(forKey: "GEMEENTE") as? String
-                volgendeReca.tel = (jsonObject.value(forKey: "TEL") as? Int16)!
-                volgendeReca.gsm = (jsonObject.value(forKey: "GSM") as? Int16)!
-                volgendeReca.fax = (jsonObject.value(forKey: "FAX") as? Int16)!
+               
+             
+                
+                volgendeReca.tel = jsonObject.value(forKey: "TEL") as? String
+                volgendeReca.gsm = jsonObject.value(forKey: "GSM") as? String
+                volgendeReca.fax = jsonObject.value(forKey: "FAX") as? String
                 volgendeReca.web = jsonObject.value(forKey: "WEB") as? String
                 volgendeReca.mail = jsonObject.value(forKey: "MAIL") as? String
                 
@@ -138,23 +137,22 @@ public class JSONParser{
                 volgendeSanitair.naam = jsonObject.value(forKey: "NAAM") as? String
                 volgendeSanitair.adres_straat = jsonObject.value(forKey: "ADRES_STRAAT") as? String
                 
-                let adresNrSTr = jsonObject.value(forKey: "ADRES_NR") as? String!
-                volgendeSanitair.adres_nr = Int16.init(adresNrSTr!)!
+                volgendeSanitair.adres_nr = jsonObject.value(forKey: "ADRES_NR") as? String!
+                
                 //volgendeSanitair.adres_nr = (jsonObject.value(forKey: "ADRES_NR") as? Int16)!
                 
               //  let adresBusStr = jsonObject.value(forKey: "ADRES_BUS") as? String!
                 //volgendeSanitair.adres_bus = Int16.init(adresBusStr!)!
                 //volgendeSanitair.adres_bus = jsonObject.value(forKey: "ADRES_BUS") as? String
                 
-                let adresPnrStr = jsonObject.value(forKey: "PNR") as? String!
-                volgendeSanitair.postnummer = Int16.init(adresPnrStr!)!
+                volgendeSanitair.postnummer = jsonObject.value(forKey: "PNR") as? String!
                 
                 //volgendeSanitair.postnummer = (jsonObject.value(forKey: "PNR")  as? Int16)!
                 volgendeSanitair.gemeente = jsonObject.value(forKey: "GEMEENTE") as? String
-                volgendeSanitair.tel = (jsonObject.value(forKey: "TEL") as? Int32)!
+                volgendeSanitair.tel = jsonObject.value(forKey: "TEL") as? String
                 volgendeSanitair.web = jsonObject.value(forKey: "WEB") as? String
                 
-                volgendeSanitair.toilet_deurbreedte = (jsonObject.value(forKey: "TOILET_BREEDTE") as? Int16)!
+                volgendeSanitair.inkomdeur_breedte = jsonObject.value(forKey: "TOILET_BREEDTE") as? String
                 
                 let latStr = jsonObject.value(forKey: "LAT") as! String
                 volgendeSanitair.lat = Double.init(latStr)!
@@ -194,14 +192,14 @@ public class JSONParser{
                 
                 volgendePoi.subtype = jsonObject.value(forKey: "SUBTYPE") as? String
                 volgendePoi.naam = jsonObject.value(forKey: "NAAM") as? String
-                volgendePoi.adres_straat = jsonObject.value(forKey: "ADRES_STRAAT") as? String
-                volgendePoi.adres_nr = (jsonObject.value(forKey: "ADRES_NR") as? Int16)!
-                volgendePoi.adres_bus = (jsonObject.value(forKey: "ADRES_BUS") as? Int16)!
-                volgendePoi.pnr = (jsonObject.value(forKey: "PNR")  as? Int16)!
+                volgendePoi.adres_straat = jsonObject.value(forKey: "ADRES_STRAAT") as! String
+                volgendePoi.adres_nr = jsonObject.value(forKey: "ADRES_NR") as! String
+                volgendePoi.adres_bus = jsonObject.value(forKey: "ADRES_BUS") as! String
+                volgendePoi.pnr = jsonObject.value(forKey: "PNR")  as? String
                 volgendePoi.gemeente = jsonObject.value(forKey: "GEMEENTE") as? String
-                volgendePoi.tel = (jsonObject.value(forKey: "TEL") as? Int16)!
-                volgendePoi.gsm = (jsonObject.value(forKey: "GSM") as? Int16)!
-                volgendePoi.fax = (jsonObject.value(forKey: "FAX") as? Int16)!
+                volgendePoi.tel = jsonObject.value(forKey: "TEL") as? String
+                volgendePoi.gsm = jsonObject.value(forKey: "GSM") as? String
+                volgendePoi.fax = jsonObject.value(forKey: "FAX") as? String
                 volgendePoi.web = jsonObject.value(forKey: "WEB") as? String
                 volgendePoi.mail = jsonObject.value(forKey: "MAIL") as? String
                 
@@ -210,7 +208,7 @@ public class JSONParser{
                 
 //zonder de "try" krijg ik hier de melding dat een geforceerde omzetting naar String nooit "nil" kan weergeven. Vandaar try?
                 volgendePoi.toilet_ruimte = jsonObject.value(forKey: "TOILET_RUIMTE") as! String
-                volgendePoi.inkom_drempel = jsonObject.value(forKey: "INKOM_DREMPEL") as! Int16
+               // volgendePoi.inkom_drempel = jsonObject.value(forKey: "INKOM_DREMPEL") as! String
                 let latStr = jsonObject.value(forKey: "LAT") as! String
                 volgendePoi.lat = Double.init(latStr)!
                 let lonStr = jsonObject.value(forKey: "LON") as! String
@@ -312,12 +310,12 @@ public class JSONParser{
                 volgendeInfokantoor.subtype = jsonObject.value(forKey: "SUBTYPE") as? String
                 volgendeInfokantoor.naam = jsonObject.value(forKey: "NAAM") as? String
                 volgendeInfokantoor.adres_straat = jsonObject.value(forKey: "ADRES_STRAAT") as? String
-                volgendeInfokantoor.adres_nr = (jsonObject.value(forKey: "ADRES_NR") as? Int16)!
-                volgendeInfokantoor.adres_bus = (jsonObject.value(forKey: "ADRES_BUS") as? Int16)!
-                volgendeInfokantoor.pnr = (jsonObject.value(forKey: "PNR")  as? Int16)!
+                volgendeInfokantoor.adres_nr = jsonObject.value(forKey: "ADRES_NR") as? String
+                volgendeInfokantoor.adres_bus = jsonObject.value(forKey: "ADRES_BUS") as? String
+                volgendeInfokantoor.pnr = jsonObject.value(forKey: "PNR")  as? String
                 volgendeInfokantoor.gemeente = jsonObject.value(forKey: "GEMEENTE") as? String
-                volgendeInfokantoor.tel = (jsonObject.value(forKey: "TEL") as? Int16)!
-                volgendeInfokantoor.gsm = (jsonObject.value(forKey: "GSM") as? Int16)!
+                volgendeInfokantoor.tel = jsonObject.value(forKey: "TEL") as? String
+                volgendeInfokantoor.gsm = jsonObject.value(forKey: "GSM") as? String
                 volgendeInfokantoor.web = jsonObject.value(forKey: "WEB") as? String
                 volgendeInfokantoor.mail = jsonObject.value(forKey: "MAIL") as? String
                 
