@@ -78,6 +78,10 @@ class ProfileViewController: UIViewController {
         
     }
     
+    @IBAction func screenTapped(_ sender: UITapGestureRecognizer) {
+        
+        naam.resignFirstResponder()
+    }
     
     }
 
