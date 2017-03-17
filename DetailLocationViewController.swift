@@ -83,6 +83,39 @@ class DetailLocationViewController: UIViewController {
             lblNaam.text = object?.value(forKey: "stop_name") as! String?
             lblGsm.isHidden = true
         }
+        else if (object is Restaurant){
+            
+            //scherm opbouwen voor Restaurants
+            
+            lblNaam.text = object?.value(forKey: "naam") as! String?
+            lblCategorie.text = "Restaurants"
+            
+            ivLogo.image = UIImage.init(named: "Restaurant.png")
+            
+            lblAdresStraat.text = object?.value(forKey: "adres_straat") as! String?
+            lblAdresNr.text = object?.value(forKey: "adres_nr") as! String?
+            lblAdresBus.text = object?.value(forKey: "adres_bus") as! String?
+            lblPostcode.text = object?.value(forKey: "pnr") as! String?
+            lblGemeente.text = object?.value(forKey: "gemeente") as! String?
+            
+            //str opvragen van de parser, string omzetten naar url, url omzetten naar data, data omzetten naar afbeelding, afbeelding toevoegen aan de outlet
+            
+            do {
+                let picMainStr = object?.value(forKey: "url_picture_main") as! String?
+                let picMainUrl = URL(string: picMainStr!)
+                
+                let picMainData = try Data(contentsOf: picMainUrl!)
+                let picMainImage = UIImage.init(data: picMainData)
+                
+                ivMainPicture.image = picMainImage
+                
+                
+            } catch {
+                ivMainPicture.image = UIImage.init(named: "Restaurant")
+            }
+
+            
+        }
         
     }
 
