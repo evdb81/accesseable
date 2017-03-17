@@ -55,6 +55,12 @@ public class DAO{
         }
         return []
     }
+    //tramhaltes weergeven op stop_naam & straatnaam (adres_straat)
+     func getAllTramHaltesSearchBar(naam: searchText)
+    {
+    
+    
+    }
     
     
     //Restaurants en Café's
@@ -85,6 +91,7 @@ public class DAO{
         return []
     }
     
+    
     //POI (Musea etc)
     func getAllPOI() -> [POI]
     {
@@ -98,6 +105,8 @@ public class DAO{
         }
         return []
     }
+    
+    
     
     //Infopunten
     func getAllInfoPunten() -> [Infokantoor]
@@ -113,6 +122,8 @@ public class DAO{
         return []
     }
     
+    
+    
     //Logementen
     func getAllLogementen() -> [Logement]
     {
@@ -127,6 +138,8 @@ public class DAO{
         return []
     }
     
+    
+    
     //Parkeerplaatsen
     func getAllVPP() -> [VPP]
     {
@@ -140,6 +153,8 @@ public class DAO{
         }
         return []
     }
+    
+    
     
     //Hellingen
     
@@ -156,7 +171,6 @@ public class DAO{
             print("opvragen hellingen niet mogelijk")
             }
         return []
-        
     }
     
     

@@ -44,16 +44,17 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         items.removeAll()
        
-/* foutmeldingen op de code hiertussen
+        items.append(contentsOf: DAO.sharedDAO.getAllTramHaltesSearchBar(naam: searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllInfopuntenSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllReCaSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllSanitairSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllLogementenSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllPoiSearchBar(naam:searchText))
-        items.append(contentsOf: DAO.sharedDAO.getAllVPPSearchBar(naam:searchText))
-        items.append(contentsOf: DAO.sharedDAO.getAllTramHaltesSearchBar(naam: searchText))
-*/
- 
+      
+
+        /*
+            items.append(contentsOf: DAO.sharedDAO.getAllVPPSearchBar(naam:searchText))
+         */
  
         tvZoekResultaten.reloadData()
     }
@@ -71,5 +72,11 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
         
         return cell!
     }
+    
+    @IBAction func clearKeyboard(_ sender: Any) {
+        zoekbalk.resignFirstResponder()
+        
+    }
+    
     
 }
