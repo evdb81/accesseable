@@ -79,9 +79,14 @@ public class JSONParser{
                 
                 //volgendeReca.adres_nr = jsonObject.value(forKey: "ADRES_NR") as? String
                 let adresBusStr = jsonObject.value(forKey: "ADRES_BUS") as? String!
-                volgendeReca.adres_bus = Int16.init(adresBusStr!)!
+                if(adresBusStr != "")
+                {
+                    volgendeReca.adres_bus = Int16.init(adresBusStr!)!
+                }
+                
                 //volgendeReca.adres_bus = (jsonObject.value(forKey: "ADRES_BUS") as? Int16)!
-                volgendeReca.pnr = (jsonObject.value(forKey: "PNR")  as? Int16)!
+                
+                volgendeReca.pnr = Int16.init((jsonObject.value(forKey: "PNR")  as? String)!)!
                 volgendeReca.gemeente = jsonObject.value(forKey: "GEMEENTE") as? String
                 volgendeReca.tel = (jsonObject.value(forKey: "TEL") as? Int16)!
                 volgendeReca.gsm = (jsonObject.value(forKey: "GSM") as? Int16)!
@@ -137,8 +142,8 @@ public class JSONParser{
                 volgendeSanitair.adres_nr = Int16.init(adresNrSTr!)!
                 //volgendeSanitair.adres_nr = (jsonObject.value(forKey: "ADRES_NR") as? Int16)!
                 
-                let adresBusStr = jsonObject.value(forKey: "ADRES_BUS") as? String!
-                volgendeSanitair.adres_bus = Int16.init(adresBusStr!)!
+              //  let adresBusStr = jsonObject.value(forKey: "ADRES_BUS") as? String!
+                //volgendeSanitair.adres_bus = Int16.init(adresBusStr!)!
                 //volgendeSanitair.adres_bus = jsonObject.value(forKey: "ADRES_BUS") as? String
                 
                 let adresPnrStr = jsonObject.value(forKey: "PNR") as? String!
@@ -204,7 +209,7 @@ public class JSONParser{
                 
                 
 //zonder de "try" krijg ik hier de melding dat een geforceerde omzetting naar String nooit "nil" kan weergeven. Vandaar try?
-                volgendePoi.toilet_ruimte = try jsonObject.value(forKey: "TOILET_RUIMTE") as! String
+                volgendePoi.toilet_ruimte = jsonObject.value(forKey: "TOILET_RUIMTE") as! String
                 volgendePoi.inkom_drempel = jsonObject.value(forKey: "INKOM_DREMPEL") as! Int16
                 let latStr = jsonObject.value(forKey: "LAT") as! String
                 volgendePoi.lat = Double.init(latStr)!
@@ -221,7 +226,9 @@ public class JSONParser{
     }
 
     
-    //PARKINGS
+    /* Alles van parking moet eruit
+     
+     PARKINGS
     
     func parseVPP (context: NSManagedObjectContext)
     {
@@ -270,7 +277,9 @@ public class JSONParser{
         }
         //geen return nodig omdat je gegevens direct opslaat in je databank
     }
-    
+        */
+ 
+ 
     //INFOKANTOREN
     
     func parseInfokantoor( context: NSManagedObjectContext)

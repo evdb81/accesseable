@@ -4,7 +4,8 @@
 //
 //  Created by mobapp06 on 09/03/17.
 //  Copyright © 2017 mobapp06. All rights reserved.
-//
+
+
 
 import UIKit
 import CoreData
@@ -12,75 +13,63 @@ import CoreData
 class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     //outlet voor zoekbar
-     @IBOutlet weak var zoekbalk: UISearchBar!
+    @IBOutlet weak var zoekbalk: UISearchBar!
     //outlet voor tabel met zoekresultaten
     @IBOutlet weak var tvZoekResultaten: UITableView!
     
+    //variabelen van sharedDAO gebruiken (waar alle waarden van alle entiteiten inzitten)
+    
+    var items:[NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
-    
-    //zoeken op woord in titel, omschrijving & straatnaam
-    func zoekbalkActie (_searchBar: UISearchBar, textDidChange searchText: String)
-    {
-        //request voor items uit Infokantoor
-        let requestInfo = NSFetchRequest<NSFetchRequestResult>(entityName:"Infokantoor")
-        requestInfo.returnsObjectsAsFaults = false
-        
-        //request voor items uit Logement
-        let requestLoge = NSFetchRequest<NSFetchRequestResult>(entityName:"Logement")
-        requestLoge.returnsObjectsAsFaults = false
-        
-        //request voor items uit POI
-        let requestPOI = NSFetchRequest<NSFetchRequestResult>(entityName:"POI")
-        requestPOI.returnsObjectsAsFaults = false
-        
-        //request voor items uit Restaurant
-        let requestReca = NSFetchRequest<NSFetchRequestResult>(entityName:"Restaurant")
-        requestReca.returnsObjectsAsFaults = false
-        
-        //request voor items uit Sanitair
-        let requestSani = NSFetchRequest<NSFetchRequestResult>(entityName:"Sanitair")
-        requestSani.returnsObjectsAsFaults = false
-        
-        //request voor items uit Tramhalte
-        let requestTram = NSFetchRequest<NSFetchRequestResult>(entityName:"Tramhalte")
-        requestTram.returnsObjectsAsFaults = false
-        
-        //request voor items uit VPP
-        let requestVPP = NSFetchRequest<NSFetchRequestResult>(entityName:"VPP")
-        requestVPP.returnsObjectsAsFaults = false
-        
-     
-        //array aanmaken van alle entiteiten om op te zoeken
-        let requestList = [requestInfo, requestLoge, requestPOI, requestReca, requestSani, requestTram, requestVPP]
-        
-        //functie om te sorten -> overslaan, is extra
+    private class func getContext() -> NSManagedObjectContext {
+        return DAO.sharedDAO.persistentContainer.viewContext
     }
     
-
     //aantal kolommen in tabel
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     //aantal rijen
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return items.count
+    }
+    
+    //Verwijzen naar searchbar functies in DAO -> zoekfunctie toepassen
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        items.removeAll()
+       
+/* foutmeldingen op de code hiertussen
+        items.append(contentsOf: DAO.sharedDAO.getAllInfopuntenSearchBar(naam:searchText))
+        items.append(contentsOf: DAO.sharedDAO.getAllReCaSearchBar(naam:searchText))
+        items.append(contentsOf: DAO.sharedDAO.getAllSanitairSearchBar(naam:searchText))
+        items.append(contentsOf: DAO.sharedDAO.getAllLogementenSearchBar(naam:searchText))
+        items.append(contentsOf: DAO.sharedDAO.getAllPoiSearchBar(naam:searchText))
+        items.append(contentsOf: DAO.sharedDAO.getAllVPPSearchBar(naam:searchText))
+        items.append(contentsOf: DAO.sharedDAO.getAllTramHaltesSearchBar(naam: searchText))
+*/
+ 
+ 
+        tvZoekResultaten.reloadData()
     }
     
     //ZOEKRESULTAAT WEERGEVEN IN TABEL (ROW_ID = CELL)
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
-        //cell?.textLabel?.text = requestInfo.text
+        cell?.textLabel?.text = items[indexPath.row].value(forKey: "stop_name") as? String
+        cell?.textLabel?.text = items[indexPath.row].value(forKey: "naam") as? String
+        cell?.textLabel?.text = items[indexPath.row].value(forKey: "adres_straat") as? String
+        cell?.textLabel?.text = items[indexPath.row].value(forKey: "tel") as? String
+        cell?.textLabel?.text = items[indexPath.row].value(forKey: "gemeente") as? String
         
-    return cell!
+        return cell!
     }
-    
-    
     
 }
