@@ -1411,15 +1411,19 @@ Hoekstra Jelle                                                              VAND
                         </subviews>
                         <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="hbt-65-Kcd" firstAttribute="bottom" secondItem="pSY-FV-ijk" secondAttribute="top" id="O3Y-oF-4z1"/>
+                            <constraint firstItem="hbt-65-Kcd" firstAttribute="bottom" secondItem="pSY-FV-ijk" secondAttribute="top" id="P8n-xr-fPu"/>
                             <constraint firstItem="k1B-mR-9Jd" firstAttribute="leading" secondItem="rbQ-6F-aGT" secondAttribute="leading" id="abA-gI-Boa"/>
-                            <constraint firstItem="hbt-65-Kcd" firstAttribute="trailing" secondItem="k1B-mR-9Jd" secondAttribute="trailing" id="fcH-H3-Jjs"/>
                             <constraint firstItem="k1B-mR-9Jd" firstAttribute="top" secondItem="TVI-qn-Hwe" secondAttribute="bottom" id="jlY-4A-wDQ"/>
-                            <constraint firstItem="hbt-65-Kcd" firstAttribute="top" secondItem="k1B-mR-9Jd" secondAttribute="bottom" constant="94" id="mB9-dr-bhz"/>
-                            <constraint firstItem="hbt-65-Kcd" firstAttribute="leading" secondItem="k1B-mR-9Jd" secondAttribute="leading" id="nh9-xS-8R0"/>
+                            <constraint firstItem="hbt-65-Kcd" firstAttribute="top" secondItem="k1B-mR-9Jd" secondAttribute="bottom" constant="94" id="kHL-LW-SL0"/>
+                            <constraint firstItem="hbt-65-Kcd" firstAttribute="trailing" secondItem="k1B-mR-9Jd" secondAttribute="trailing" id="thO-ja-s8A"/>
                             <constraint firstAttribute="trailing" secondItem="k1B-mR-9Jd" secondAttribute="trailing" id="vxQ-vb-0Iu"/>
+                            <constraint firstItem="hbt-65-Kcd" firstAttribute="leading" secondItem="k1B-mR-9Jd" secondAttribute="leading" id="xIX-Mq-Qmv"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="AeN-xq-VLJ" appends="YES" id="UhR-se-K0D"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="searchDisplayController" destination="2s5-Xa-Sqe" id="Wvd-Ml-Gep"/>
@@ -1444,6 +1448,11 @@ Hoekstra Jelle                                                              VAND
                         <outlet property="searchResultsDelegate" destination="VcT-IA-WTi" id="SQL-MB-8VC"/>
                     </connections>
                 </searchDisplayController>
+                <tapGestureRecognizer id="AeN-xq-VLJ">
+                    <connections>
+                        <action selector="clearKeyboard:" destination="VcT-IA-WTi" id="DKs-oe-XBV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1042.4000000000001" y="-1678.1109445277364"/>
         </scene>
