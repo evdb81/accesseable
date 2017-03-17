@@ -44,7 +44,7 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         items.removeAll()
        
-/* foutmeldingen op de code hiertussen
+/*
         items.append(contentsOf: DAO.sharedDAO.getAllInfopuntenSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllReCaSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllSanitairSearchBar(naam:searchText))
@@ -53,7 +53,6 @@ class ZoekenViewController:UIViewController, UITableViewDataSource, UITableViewD
         items.append(contentsOf: DAO.sharedDAO.getAllVPPSearchBar(naam:searchText))
         items.append(contentsOf: DAO.sharedDAO.getAllTramHaltesSearchBar(naam: searchText))
 */
- 
  
         tvZoekResultaten.reloadData()
     }

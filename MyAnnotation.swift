@@ -66,13 +66,17 @@ public class MyAnnotation:NSObject, MKAnnotation
         self.object = halte
     }
     
-    init(vpp:VPP)
+   /* alles van parking moet eruit
+     
+     
+     init(vpp:VPP)
     {
         self.coordinate = CLLocationCoordinate2DMake(vpp.lat, vpp.lon)
         self.title = "parkeerplaats"
         self.pinColor = UIColor.cyan
         self.object = vpp
     }
+ */
    
     init(helling:Helling) {
         self.coordinate = CLLocationCoordinate2DMake(helling.lat, helling.lon)

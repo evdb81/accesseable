@@ -15,7 +15,6 @@ class BuurtCategorieenViewController: UIViewController {
     @IBOutlet weak var swMusea: UISwitch!
     @IBOutlet weak var swInfopunten: UISwitch!
     @IBOutlet weak var swHotels: UISwitch!
-    @IBOutlet weak var swParking: UISwitch!
     @IBOutlet weak var swTramhalte: UISwitch!
     @IBOutlet weak var swHellingen: UISwitch!
 
@@ -31,7 +30,7 @@ class BuurtCategorieenViewController: UIViewController {
         swMusea.isOn = defaults.bool(forKey: "Museum")
         swInfopunten.isOn = defaults.bool(forKey: "Info")
         swHotels.isOn = defaults.bool(forKey: "Hotel")
-        swParking.isOn = defaults.bool(forKey: "Parking")
+        //swParking.isOn = defaults.bool(forKey: "Parking")
         swTramhalte.isOn = defaults.bool(forKey: "Halte")
         swHellingen.isOn = defaults.bool(forKey: "Helling")
 
@@ -43,14 +42,16 @@ class BuurtCategorieenViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let buurtVC = segue.destination as! BuurtViewController
         
-        let welkeSwitchStaatAan:[String:Bool] = ["Reca":swReCa.isOn, "Toilet":swToilet.isOn,"Museum":swMusea.isOn,"Info":swInfopunten.isOn,"Hotel":swHotels.isOn, "Parking":swParking.isOn, "Halte":swTramhalte.isOn, "Helling":swHellingen.isOn]
+        let welkeSwitchStaatAan:[String:Bool] = ["Reca":swReCa.isOn, "Toilet":swToilet.isOn,"Museum":swMusea.isOn,"Info":swInfopunten.isOn,"Hotel":swHotels.isOn,
+                                                 //"Parking":swParking.isOn,
+            "Halte":swTramhalte.isOn, "Helling":swHellingen.isOn]
         
         defaults.set(swReCa.isOn, forKey: "Reca")
         defaults.set(swToilet.isOn, forKey: "Toilet")
         defaults.set(swMusea.isOn, forKey: "Museum")
         defaults.set(swInfopunten.isOn, forKey: "Info")
         defaults.set(swHotels.isOn, forKey: "Hotel")
-        defaults.set(swParking.isOn, forKey: "Parking")
+       // defaults.set(swParking.isOn, forKey: "Parking")
         defaults.set(swTramhalte.isOn, forKey: "Halte")
         defaults.set(swHellingen.isOn, forKey: "Helling")
         
