@@ -9,21 +9,25 @@
 import UIKit
 import CoreData
 
+
+
 class DetailLocationViewController: UIViewController {
 
     var object:NSManagedObject?
     
+    @IBOutlet weak var ivLogo: UIImageView!
+    
     @IBOutlet weak var lblNaam: UILabel!
     @IBOutlet weak var lblCategorie: UILabel!
+    
+    @IBOutlet weak var ivMainPicture: UIImageView!
+    
     @IBOutlet weak var lblAdresStraat: UILabel!
-    
-    
     @IBOutlet weak var lblAdresNr: UILabel!
     @IBOutlet weak var lblAdresBus: UILabel!
     @IBOutlet weak var lblPostcode: UILabel!
     @IBOutlet weak var lblGemeente: UILabel!
     @IBOutlet weak var lblTel: UILabel!
-    
     @IBOutlet weak var lblGsm: UILabel!
     @IBOutlet weak var lblSite: UILabel!
     @IBOutlet weak var lblMail: UILabel!
@@ -39,16 +43,33 @@ class DetailLocationViewController: UIViewController {
         {
             //scherm opbouwen voor POI
             lblNaam.text = object?.value(forKey: "naam") as! String?
-            
-            
             lblCategorie.text = object?.value(forKey: "subtype") as! String?
             
-            
+            ivLogo.image = UIImage.init(named: "POI.png")
+                
             lblAdresStraat.text = object?.value(forKey: "adres_straat") as! String?
             lblAdresNr.text = object?.value(forKey: "adres_nr") as! String?
             lblAdresBus.text = object?.value(forKey: "adres_bus") as! String?
             lblPostcode.text = object?.value(forKey: "pnr") as! String?
             lblGemeente.text = object?.value(forKey: "gemeente") as! String?
+            
+            //str opvragen van de parser, string omzetten naar url, url omzetten naar data, data omzetten naar afbeelding, afbeelding toevoegen aan de outlet
+            
+            do {
+                let picMainStr = object?.value(forKey: "url_picture_main") as! String?
+                let picMainUrl = URL(string: picMainStr!)
+                
+                let picMainData = try Data(contentsOf: picMainUrl!)
+                let picMainImage = UIImage.init(data: picMainData)
+                
+                ivMainPicture.image = picMainImage
+
+
+            } catch {
+                ivMainPicture.image = UIImage.init(named: "POI")
+            }
+            
+            
             
             
             lblTel.text = object?.value(forKey: "tel") as! String?
@@ -60,6 +81,7 @@ class DetailLocationViewController: UIViewController {
         else if (object is Tramhalte)
         {
             lblNaam.text = object?.value(forKey: "stop_name") as! String?
+            lblGsm.isHidden = true
         }
         
     }

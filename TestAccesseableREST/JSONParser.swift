@@ -202,6 +202,7 @@ public class JSONParser{
                 volgendePoi.fax = jsonObject.value(forKey: "FAX") as? String
                 volgendePoi.web = jsonObject.value(forKey: "WEB") as? String
                 volgendePoi.mail = jsonObject.value(forKey: "MAIL") as? String
+                volgendePoi.url_picture_main = jsonObject.value(forKey: "URL_PICTURE_MAIN") as? String
                 
 
                 
