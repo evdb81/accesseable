@@ -61,9 +61,9 @@ public class JSONParser{
                 volgendeReca.naam = jsonObject.value(forKey: "NAAM") as? String
                 volgendeReca.naam = jsonObject.value(forKey: "NAAM") as? String
                 volgendeReca.adres_straat = jsonObject.value(forKey: "ADRES_STRAAT") as? String
-                //volgendeReca.adres_nr = jsonObject.value(forKey: "ADRES_NR") as? String
+               
                 volgendeReca.adres_bus = jsonObject.value(forKey: "ADRES_BUS") as? String!
-                //volgendeReca.adres_bus = (jsonObject.value(forKey: "ADRES_BUS") as? Int16)!
+                
                 volgendeReca.pnr = jsonObject.value(forKey: "PNR")  as? String
                 volgendeReca.gemeente = jsonObject.value(forKey: "GEMEENTE") as? String
                 volgendeReca.tel = jsonObject.value(forKey: "TEL") as? String
@@ -76,6 +76,7 @@ public class JSONParser{
                 volgendeReca.lat = Double.init(latStr)!
                 let lonStr = jsonObject.value(forKey: "LON") as! String
                 volgendeReca.lon = Double.init(lonStr)!
+                volgendeReca.url_picture_main = jsonObject.value(forKey: "URL_PICTURE_MAIN") as? String
             }
         }
         catch{
