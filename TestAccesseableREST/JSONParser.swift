@@ -149,6 +149,7 @@ public class JSONParser{
                 volgendePoi.fax = jsonObject.value(forKey: "FAX") as? String
                 volgendePoi.web = jsonObject.value(forKey: "WEB") as? String
                 volgendePoi.mail = jsonObject.value(forKey: "MAIL") as? String
+                volgendePoi.url_picture_main = jsonObject.value(forKey: "URL_PICTURE_MAIN") as? String
                 
                 //zonder de "try" krijg ik hier de melding dat een geforceerde omzetting naar String nooit "nil" kan weergeven. Vandaar try?
                 volgendePoi.toilet_ruimte = jsonObject.value(forKey: "TOILET_RUIMTE") as! String
