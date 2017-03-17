@@ -15,8 +15,15 @@ class DetailLocationViewController: UIViewController {
     
     @IBOutlet weak var lblNaam: UILabel!
     @IBOutlet weak var lblCategorie: UILabel!
-    @IBOutlet weak var lblAdres: UILabel!
+    @IBOutlet weak var lblAdresStraat: UILabel!
+    
+    @IBOutlet weak var lblAdresNr: UILabel!
+    @IBOutlet weak var lblAdresBus: UILabel!
+    @IBOutlet weak var lblPostcode: UILabel!
+    @IBOutlet weak var lblGemeente: UILabel!
     @IBOutlet weak var lblTel: UILabel!
+    
+    @IBOutlet weak var lblGsm: UILabel!
     @IBOutlet weak var lblSite: UILabel!
     @IBOutlet weak var lblMail: UILabel!
     
@@ -36,7 +43,13 @@ class DetailLocationViewController: UIViewController {
             lblCategorie.text = object?.value(forKey: "subtype") as! String?
             
             
-            lblAdres.text = object?.value(forKey: "adres_straat") as! String?
+            lblAdresStraat.text = object?.value(forKey: "adres_straat") as! String?
+            lblAdresNr.text = object?.value(forKey: "adres_nr") as! String?
+            lblAdresBus.text = object?.value(forKey: "adres_bus") as! String?
+            lblPostcode.text = object?.value(forKey: "Postcode") as! String?
+            
+            
+            
             //lblTel.text = object?.value(forKey: "tel") as! String?
             lblSite.text = object?.value(forKey: "web") as! String?
             lblMail.text = object?.value(forKey: "mail") as! String?
