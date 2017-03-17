@@ -1154,6 +1154,7 @@ Hoekstra Jelle                                                              VAND
                         <outlet property="lblAdres" destination="7Ju-k4-hpk" id="pIf-0L-jxf"/>
                         <outlet property="lblAdresBus" destination="1PR-iE-Asw" id="URj-aA-tLV"/>
                         <outlet property="lblAdresNr" destination="0sj-yt-yVE" id="72j-MU-fYy"/>
+                        <outlet property="lblAdresStraat" destination="7Ju-k4-hpk" id="Bl5-CI-s65"/>
                         <outlet property="lblCategorie" destination="1T8-B5-trH" id="KSx-9h-LNk"/>
                         <outlet property="lblGemeente" destination="UQt-6m-dGc" id="xcY-bI-o9k"/>
                         <outlet property="lblGsm" destination="vaw-dY-PMe" id="M67-UY-tH0"/>
@@ -1200,11 +1201,6 @@ Hoekstra Jelle                                                              VAND
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.12941176470588237" green="0.17647058823529413" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" restorationIdentifier="swParking" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZL0-Bz-6Kj">
-                                <rect key="frame" x="12" y="366.5" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" red="0.12941176470588237" green="0.17647058823529413" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurants en Cafés" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-RY-AWi">
                                 <rect key="frame" x="83" y="106" width="266" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1239,14 +1235,6 @@ Hoekstra Jelle                                                              VAND
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hotels en Slaapplaatsen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-J1-O6b">
                                 <rect key="frame" x="83" y="324" width="266" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voorbehouden Parking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="E7a-UU-gDb">
-                                <rect key="frame" x="84" y="376" width="266" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49019607843137253" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="18"/>
@@ -1316,7 +1304,6 @@ Hoekstra Jelle                                                              VAND
                         <outlet property="swHotels" destination="0V8-Mf-Jmm" id="0xe-j7-lsb"/>
                         <outlet property="swInfopunten" destination="Zlb-NN-ixO" id="qXd-t8-NH4"/>
                         <outlet property="swMusea" destination="zww-BV-lmP" id="ATT-1L-mLF"/>
-                        <outlet property="swParking" destination="ZL0-Bz-6Kj" id="cvB-kF-MBs"/>
                         <outlet property="swReCa" destination="WbD-BU-y0k" id="KYc-lO-pwi"/>
                         <outlet property="swToilet" destination="xs4-AU-2Il" id="iEV-Os-MeA"/>
                         <outlet property="swTramhalte" destination="ECd-oQ-9Zh" id="xQY-Sg-aG2"/>
