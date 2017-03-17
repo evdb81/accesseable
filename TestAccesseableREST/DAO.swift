@@ -200,8 +200,11 @@ public class DAO{
         return []
     }
     
+    
+    
+    
     //HELLINGEN
-    //binnentrekken
+     //binnentrekken
     func getAllHellingen() -> [Helling]
     {
         let request = NSFetchRequest<NSFetchRequestResult>.init(entityName: "Helling")
@@ -209,11 +212,11 @@ public class DAO{
         do {
             let helling = try persistentContainer.viewContext.fetch(request) as! [Helling]
             return helling
-        }
+           }
             
         catch {
             print("opvragen hellingen niet mogelijk")
-        }
+            }
         return []
     }
     //Hellingen kunnen opzoeken op naam
@@ -229,10 +232,7 @@ public class DAO{
         }
         return []
     }
-    
-    
-    
-    
+
     
     //OPSLAAN - Gegevens die binnengetrokken zijn oplaan als Core Data
     func saveContext () {
