@@ -48,10 +48,11 @@ class DetailLocationViewController: UIViewController {
             lblAdresNr.text = object?.value(forKey: "adres_nr") as! String?
             lblAdresBus.text = object?.value(forKey: "adres_bus") as! String?
             lblPostcode.text = object?.value(forKey: "pnr") as! String?
+            lblGemeente.text = object?.value(forKey: "gemeente") as! String?
             
             
-            
-            //lblTel.text = object?.value(forKey: "tel") as! String?
+            lblTel.text = object?.value(forKey: "tel") as! String?
+            lblGsm.text = object?.value(forKey: "gsm") as! String?
             lblSite.text = object?.value(forKey: "web") as! String?
             lblMail.text = object?.value(forKey: "mail") as! String?
            
