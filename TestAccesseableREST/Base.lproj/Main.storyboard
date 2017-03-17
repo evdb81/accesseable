@@ -1151,10 +1151,9 @@ Hoekstra Jelle                                                              VAND
                         <color key="backgroundColor" red="0.48627450979999998" green="0.75686274509999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="lblAdres" destination="7Ju-k4-hpk" id="pIf-0L-jxf"/>
                         <outlet property="lblAdresBus" destination="1PR-iE-Asw" id="URj-aA-tLV"/>
                         <outlet property="lblAdresNr" destination="0sj-yt-yVE" id="72j-MU-fYy"/>
-                        <outlet property="lblAdresStraat" destination="7Ju-k4-hpk" id="Bl5-CI-s65"/>
+                        <outlet property="lblAdresStraat" destination="7Ju-k4-hpk" id="zbU-Gb-JbQ"/>
                         <outlet property="lblCategorie" destination="1T8-B5-trH" id="KSx-9h-LNk"/>
                         <outlet property="lblGemeente" destination="UQt-6m-dGc" id="xcY-bI-o9k"/>
                         <outlet property="lblGsm" destination="vaw-dY-PMe" id="M67-UY-tH0"/>
